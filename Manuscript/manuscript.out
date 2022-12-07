@@ -1,19 +1,29 @@
 \BOOKMARK [1][-]{section.1}{Introduction}{}% 1
-\BOOKMARK [1][-]{section.2}{Material and Methods}{}% 2
-\BOOKMARK [1][-]{section.3}{Results}{}% 3
-\BOOKMARK [1][-]{section.4}{Discussion}{}% 4
-\BOOKMARK [1][-]{section.5}{Conclusions}{}% 5
-\BOOKMARK [1][-]{section.6}{Article types}{}% 6
-\BOOKMARK [1][-]{section.7}{Manuscript Formatting}{}% 7
-\BOOKMARK [2][-]{subsection.7.1}{Heading Levels}{section.7}% 8
-\BOOKMARK [2][-]{subsection.7.2}{Level 2}{section.7}% 9
-\BOOKMARK [3][-]{subsubsection.7.2.1}{Level 3}{subsection.7.2}% 10
-\BOOKMARK [4][-]{paragraph.7.2.1.1}{Level 4}{subsubsection.7.2.1}% 11
-\BOOKMARK [2][-]{subsection.7.3}{Equations}{section.7}% 12
-\BOOKMARK [2][-]{subsection.7.4}{Figures}{section.7}% 13
-\BOOKMARK [3][-]{subsubsection.7.4.1}{Permission to Reuse and Copyright}{subsection.7.4}% 14
-\BOOKMARK [2][-]{subsection.7.5}{Tables}{section.7}% 15
-\BOOKMARK [1][-]{section.8}{Nomenclature}{}% 16
-\BOOKMARK [2][-]{subsection.8.1}{Resource Identification Initiative}{section.8}% 17
-\BOOKMARK [2][-]{subsection.8.2}{Life Science Identifiers}{section.8}% 18
-\BOOKMARK [1][-]{section.9}{Additional Requirements}{}% 19
+\BOOKMARK [1][-]{section.2}{Technical description}{}% 2
+\BOOKMARK [1][-]{section.3}{Materials and methods}{}% 3
+\BOOKMARK [2][-]{subsection.3.1}{Quantitative assessment of reconstructed data}{section.3}% 4
+\BOOKMARK [3][-]{subsubsection.3.1.1}{Phantom simulations and data generation}{subsection.3.1}% 5
+\BOOKMARK [3][-]{subsubsection.3.1.2}{Computation cost with different matrix corrections}{subsection.3.1}% 6
+\BOOKMARK [3][-]{subsubsection.3.1.3}{Contrast-to-noise ratios with the IQ phantom}{subsection.3.1}% 7
+\BOOKMARK [3][-]{subsubsection.3.1.4}{Resolution with the scatter phantom}{subsection.3.1}% 8
+\BOOKMARK [3][-]{subsubsection.3.1.5}{Uniformity and variability with the volumetric cylinder}{subsection.3.1}% 9
+\BOOKMARK [2][-]{subsection.3.2}{Qualitative assessment of reconstructed in vivo data}{section.3}% 10
+\BOOKMARK [1][-]{section.4}{Results}{}% 11
+\BOOKMARK [2][-]{subsection.4.1}{Quantitative assessment of reconstructed data}{section.4}% 12
+\BOOKMARK [3][-]{subsubsection.4.1.1}{Computation cost with different matrix corrections}{subsection.4.1}% 13
+\BOOKMARK [3][-]{subsubsection.4.1.2}{Contrast-to-noise ratios with the IQ phantom}{subsection.4.1}% 14
+\BOOKMARK [3][-]{subsubsection.4.1.3}{Resolution with the scatter phantom}{subsection.4.1}% 15
+\BOOKMARK [3][-]{subsubsection.4.1.4}{Uniformity and variability with the volumetric cylinder}{subsection.4.1}% 16
+\BOOKMARK [2][-]{subsection.4.2}{Qualitative assessment of reconstructed in vivo data}{section.4}% 17
+\BOOKMARK [1][-]{section.5}{Discussion}{}% 18
+\BOOKMARK [1][-]{section.6}{Conclusions}{}% 19
+\BOOKMARK [1][-]{section.7}{Article types}{}% 20
+\BOOKMARK [1][-]{section.8}{Manuscript Formatting}{}% 21
+\BOOKMARK [2][-]{subsection.8.1}{Heading Levels}{section.8}% 22
+\BOOKMARK [2][-]{subsection.8.2}{Level 2}{section.8}% 23
+\BOOKMARK [3][-]{subsubsection.8.2.1}{Level 3}{subsection.8.2}% 24
+\BOOKMARK [4][-]{paragraph.8.2.1.1}{Level 4}{subsubsection.8.2.1}% 25
+\BOOKMARK [1][-]{section.9}{Nomenclature}{}% 26
+\BOOKMARK [2][-]{subsection.9.1}{Resource Identification Initiative}{section.9}% 27
+\BOOKMARK [2][-]{subsection.9.2}{Life Science Identifiers}{section.9}% 28
+\BOOKMARK [1][-]{section.10}{Additional Requirements}{}% 29
