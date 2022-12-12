@@ -23,9 +23,6 @@
 \usepackage{multirow}
 \usepackage{threeparttable}
 
-%My pacakages
-%\usepackage{textgreek}
-
 \linenumbers
 
 
@@ -33,7 +30,7 @@
 
 
 \def\keyFont{\fontsize{8}{11}\helveticabold }
-\def\firstAuthorLast{Sample {et~al.}} %use et al only if is more than 1 author
+\def\firstAuthorLast{Strugari {et~al.}} %use et al only if is more than 1 author
 
 \def\Authors{Matthew Strugari\,$^{1,2,*}$, Carles Falcon\,$^{3}$, Kjell Erlandsson\,$^{4}$, Brian Hutton\,$^{4}$, Kimberly Brewer\,$^{1,2,5}$, and Kris Thielemans\,$^{4}$}
 % Affiliations should be keyed to the author's name with superscript numbers and be listed as follows: Laboratory, Institute, Department, Organization, City, State abbreviation (USA, Canada, Australia), and Country (without detailed address information such as city zip codes or street names).
@@ -48,18 +45,17 @@ $^{5}$Department of Diagnostic Radiology, Dalhousie University, Halifax, Canada
 }
 % The Corresponding Author should be marked with an asterisk
 % Provide the exact contact address (this time including street name and city zip code) and email of the corresponding author
-\def\corrAuthor{Corresponding Author}
-
+\def\corrAuthor{Matthew Strugari}
 \def\corrEmail{matthew.strugari@dal.ca}
 
 
-
+\sloppy
 
 \begin{document}
 \onecolumn
 \firstpage{1}
 
-\title[Running Title]{Integration of advanced 3D SPECT modelling for pinhole collimators into the open-source STIR framework} 
+\title[STIR PinholeSPECT]{Integration of advanced 3D SPECT modelling for pinhole collimators into the open-source STIR framework} 
 
 \author[\firstAuthorLast ]{\Authors} %This field will be automatically populated
 \address{} %This field will be automatically populated
@@ -76,7 +72,7 @@ $^{5}$Department of Diagnostic Radiology, Dalhousie University, Halifax, Canada
 
 %%% Leave the Abstract empty if your article does not require one, please see the Summary Table for full details.
 \section{}
-Pinhole-SPECT systems are becoming increasingly important in preclinical and clinical nuclear medicine investigations as they can provide a superior resolution-sensitivity tradeoff compared to conventional parallel-hole and fan-beam collimators. Previously, open-source software did not exist for reconstructing tomographic images from pinhole-SPECT datasets. A 3D SPECT system matrix modelling library specific for pinhole collimators has recently been integrated into STIR --- an open-source software package for tomographic image reconstruction. The pinhole-SPECT library enables corrections for attenuation and the spatially variant collimator-detector response by incorporating their effects into the system matrix. Attenuation corrections can be calculated with a simple single line-of-response or a full model. The spatially variant collimator-detector response can be modelled with point spread function and depth of interaction corrections for increased system matrix accuracy. Improvements to computational speed and memory requirements can be made with image masking. This work demonstrates the flexibility and accuracy of STIR's forthcoming support for pinhole-SPECT datasets using measured and simulated single-pinhole SPECT data from which reconstructions were analyzed quantitatively and qualitatively. The extension of the open-source STIR project with advanced pinhole-SPECT modelling will enable the research community to study the impact of pinhole collimators in several SPECT imaging scenarios and with different scanners.
+Pinhole-SPECT systems are becoming increasingly important in clinical and preclinical nuclear medicine investigations as they can provide a superior resolution-sensitivity tradeoff compared to conventional parallel-hole and fan-beam collimators. Previously, open-source software did not exist for reconstructing tomographic images from pinhole-SPECT datasets. A 3D SPECT system matrix modelling library specific for pinhole collimators has recently been integrated into STIR --- an open-source software package for tomographic image reconstruction. The pinhole-SPECT library enables corrections for attenuation and the spatially variant collimator-detector response by incorporating their effects into the system matrix. Attenuation corrections can be calculated with a simple single line-of-response or a full model. The spatially variant collimator-detector response can be modelled with point spread function and depth of interaction corrections for increased system matrix accuracy. Improvements to computational speed and memory requirements can be made with image masking. This work demonstrates the flexibility and accuracy of STIR's forthcoming support for pinhole-SPECT datasets using measured and simulated single-pinhole SPECT data from which reconstructed images were analyzed quantitatively and qualitatively. The extension of the open-source STIR project with advanced pinhole-SPECT modelling will enable the research community to study the impact of pinhole collimators in several SPECT imaging scenarios and with different scanners.
 
 %Pinhole-SPECT systems are becoming increasingly important in preclinical and clinical nuclear medicine investigations as they can provide a superior resolution-sensitivity tradeoff compared to conventional parallel-hole and fan-beam collimators. Previously, open-source software did not exist for reconstructing tomographic images from pinhole-SPECT datasets. A 3D SPECT system matrix modelling library specific for pinhole collimators has recently been integrated into STIR --- an open-source software package for tomographic image reconstruction --- and made accessible from SIRF --- an open-source software package targeting synergistic image reconstruction. The pinhole-SPECT library enables corrections for attenuation and the spatially variant collimator-detector response by incorporating their effects into the system matrix. Attenuation corrections can be calculated with a simple single line-of-response or a full model. The spatially variant collimator-detector response can be modelled with point spread function and depth of interaction corrections for increased system matrix accuracy. Improvements to computational speed and memory requirements can be made with image masking. This work demonstrates the flexibility and accuracy of STIR's and SIRF's forthcoming support for pinhole-SPECT datasets using measured and simulated data from which reconstructed images were analyzed quantitatively and qualitatively. The extension of the open-source STIR and SIRF projects with advanced pinhole-SPECT modelling will enable the research community to study the impact of pinhole collimators in several SPECT imaging scenarios and with different scanners while exploring the benefits of synergistic multi-modality reconstruction.
 
@@ -89,9 +85,9 @@ Pinhole-SPECT systems are becoming increasingly important in preclinical and cli
 
 Single-photon emission computed tomography (SPECT) is based on the detection of individual $\gamma$-rays emitted from a radiotracer distribution within a subject. An Anger camera detects the $\gamma$-rays with a scintillating crystal and associated electronics after they have passed through a collimator. The collimator acts as a lens to form a 2D projection image identifying the direction from which the $\gamma$-rays originated, and a series of projection images acquired from different angles can be subsequently used to reconstruct the 3D radiotracer distribution in a tomographic image. 
 
-The design of the collimator in terms of hole-size, material, and overall geometry, among other factors, affects the spatial resolution and sensitivity of a SPECT system. A number of designs exist including but not limited to parallel-hole, fan-beam, converging and diverging, slit-slat, coded-aperture, and single- and multi-pinhole collimators. Therefore, the choice of collimator design is application dependent in order to channel photons of different energies, magnify or minify images, or select between imaging quality and imaging speed~\cite{nuclearfields.com}. Although parallel-hole and fan-beam collimators are conventionally used when imaging small fields-of-view (FOVs), pinhole collimators can provide a superior resolution-sensitivity tradeoff~\cite{collimators, recall Dr. Mawko's book}. Besides the successful application of pinhole-SPECT systems in small-animal imaging, there has been a resurgance in the use of pinhole collimators for clinical cardiac and brain studies and when imaging small FOVs~\cite{ozashin_clinical_2020}.
+The design of the collimator in terms of hole-size, material, and overall geometry, among other factors, affects the spatial resolution and sensitivity of a SPECT system. A number of designs exist including but not limited to parallel-hole, fan-beam, converging and diverging, slit-slat, coded-aperture, and single- and multi-pinhole collimators. Therefore, the choice of collimator design is application dependent in order to channel photons of different energies, magnify or minify images, or select between imaging quality and imaging speed~\cite{nuclearfields.com}. Although parallel-hole and fan-beam collimators are conventionally used when imaging small fields-of-view (FOVs), pinhole collimators can provide a superior resolution-sensitivity tradeoff~\cite{collimators, recall Dr. Mawko's book}. Besides the successful application of pinhole-SPECT systems in small-animal imaging, there has been a resurgence in the use of pinhole collimators for clinical cardiac and brain studies and when imaging small FOVs~\cite{ozashin_clinical_2020}.
 
-While the use of pinhole-SPECT has regained popularity in preclinical and clinical investigations of molecular imaging agents, there are no open-source software solutions available for reconstructing pinhole-SPECT datasets.  However, recent efforts have led to the integration of a 3D SPECT system matrix modelling library for single- and multi-pinhole collimators with square and/or round holes into the open-source Software for Tomographic Image Reconstruction (STIR). The STIR package is an object-oriented library implemented in C++ that provides a framework for research in the processing and reconstruction of emission tomography studies~\cite{thielemans_stir_2012}. Initially written for support of positron emission tomography (PET) data, STIR was previously extended to handle SPECT data with parallel- and converging-hole collimators~\cite{fuster_integration_2013a, fuster_integration_2013b}. The expansion of STIR's support for pinhole collimators marks the first open-source platform for reconstructing pinhole-SPECT datasets which is important in the advancement of molecular imaging techniques and technologies. 
+While the use of pinhole-SPECT has regained popularity in clinical and preclinical investigations of molecular imaging agents, there are no open-source software solutions available for reconstructing pinhole-SPECT datasets.  However, recent efforts have led to the integration of a 3D SPECT system matrix modelling library for pinhole collimators into the open-source Software for Tomographic Image Reconstruction (STIR). The STIR package is an object-oriented library implemented in C++ that provides a framework for research in the processing and reconstruction of emission tomography studies~\cite{thielemans_stir_2012}. Initially written for support of positron emission tomography (PET) data, STIR was previously extended to handle SPECT data with parallel- and converging-hole collimators~\cite{fuster_integration_2013a, fuster_integration_2013b}. The expansion of STIR's support for pinhole collimators marks the first open-source platform for reconstructing pinhole-SPECT datasets which is important in the advancement of molecular imaging techniques and technologies. 
 
 %More information on SIRF would go here.
 
@@ -99,24 +95,23 @@ This work aims to demonstrate the forthcoming capabilities of STIR's support for
 
 \section{Technical description}
 
-Similar to the original \texttt{SPECTUB} implementation, the new pinhole-SPECT implementation is referred to as \texttt{PinholeSPECTUB} and includes a dedicated reader for SPECT projection data in interfile format~\cite{interfile} and a SPECT projector class derived from the existing STIR \texttt{ProjMatrixByBin} class. The pinhole-SPECT interfile reader utilizes characteristics given by the projection matrix size, pixel scaling factor, and detector radius. The \texttt{ProjMatrixByBinPinholeSPECTUB} class utilizes a detector and collimator text file in order to generate the projector system matrix. The detector file defines the intrinsic point spread function (PSF), scintillating crystal attributes, and orbit information for the acquisition (i.e., number of orbits, number of angles, starting position, direction of rotation, and angular increment). Note that only circular camera orbits are supported at this time. The collimator file defines the radius of rotation and geometry for cylindrical or polygonal collimators (i.e., hole position, shape, size, tilt, and acceptance angle). An illustration of the pinhole-SPECT system matrix geometry is shown in Fig.~\ref{fig:PinholeSPECTUB_coords}. A detailed description of all parameters can be found in STIR's documentation.
+Similar to the original \texttt{SPECTUB} implementation, the new pinhole-SPECT implementation is referred to as \texttt{PinholeSPECTUB} and includes a dedicated reader for SPECT projection data in interfile format~\cite{interfile}. The pinhole-SPECT interfile reader utilizes the projection matrix size, pixel scaling factor, and detector radius. Calculation of the system matrix is executed with the \texttt{ProjMatrixByBinPinholeSPECTUB} projector class derived from the existing STIR \texttt{ProjMatrixByBin} class which utilizes a detector and collimator text file in addition to the usual STIR parameter file. The parameter file is a text file which uses an Interfile-like syntax. It is composed of keywords corresponding to the names of the various reconstruction and matrix parameters with the values entered next to them. A detailed description of all parameters can be found in STIR's documentation.
 
-\begin{figure}[htbp]
-\begin{center}
-\includegraphics[height=5cm]{STIR-UsersGuide_PinholeSPECTUB}
-\caption{\texttt{PinholeSPECTUB} system of reference and sign criteria illustrated for a polygonal collimator setup. Note that the projection matrix adheres to STIR's coordinate system as indicated by the x, y, and z axes. The detector and collimator use a rotating frame of reference where the transaxial x' and axial z' axes coincide with STIR's axes when the detector is at 0 $\mathrm{\deg}$. The collimator uses a right-handed coordinate system as indicated by the y' axis which points toward the detector. Further information is given in the text and in STIR's documentation.}
-\label{fig:PinholeSPECTUB_coords}
-\end{center}
-\end{figure}
+The detector file defines the intrinsic resolution for point spread function (PSF) corrections, scintillating crystal attributes for depth of interaction (DOI) corrections, and orbit information for the acquisition (i.e., initial angle, number of angles, angular increment, direction of rotation, and axial position with respect to the reconstructed volume). Note that only circular camera orbits are supported at this time. The collimator file defines the radius of rotation and geometry for cylindrical or polygonal collimators (i.e., the detector element exposed by the pinhole, hole position, shape, size, tilt, and acceptance angle). An illustration of the pinhole-SPECT system matrix geometry is shown in Fig.~\ref{fig:PinholeSPECTUB_coords}.
 
-The projector system matrix calculates the contribution of each voxel of the image to each detector element and includes the geometric projection of the pinhole. The geometrical approach provides higher computational speed and reduced memory requirements than the PSF approach, but is less accurate. For increased system matrix accuracy, corrections can be made for the spatially variant collimator-detector response function in terms of intrinsic PSF, depth of interaction (DOI), attenuation inside the crystal, and attenuation inside the subject --- full (different attenuation factors for each bin of the PSF) and simple (the same attenuation factor for the whole PSF)~\cite{fuster_2014}. Further improvements to speed and memory can be made with image masking using the default cylinder, an attenuation map, or an explicit mask. The projection matrix can be kept in memory or calculated per projection angle. In the latter case, the memory is released before a new angle is started, thereby reducing memory requirements but increasing computation time for iterative reconstruction algorithms.
+%-------------------------------------------------
+\noindent \textbf{Figure~\ref{fig:PinholeSPECTUB_coords} goes here.}
+%-------------------------------------------------
 
+The system matrix weights the contribution of each image voxel along the line of response (LOR) to each detector element. For increased system matrix accuracy, corrections can be made for the spatially variant collimator-detector response function in terms of intrinsic PSF, DOI, and/or attenuation (ATT) corrections by setting the appropriate fields in the parameter file. When PSF correction is disabled, a geometrical approach is applied by considering the shadow projection of the pinhole on the detector for higher computational speed and reduced memory requirements compared to the PSF approach, but is less accurate. When PSF correction is enabled, the shadow of the hole is convolved with the PSF in detector space to account for blurring effects of the camera. Values parsed from the parameter file define the number of sigmas to consider in the PSF along with the subsampling factor to temporally reduce PSF resolution for increased calculation accuracy before downsampling the final PSF to the bin size. Furthermore, when PSF or DOI corrections are enabled, an additional parsed parameter sets the spatial resolution in which to sample PSF and DOI distributions. 
+
+Enabling DOI corrections subdivides the scintillating crystal into the aforementioned distribution using Bresenham's line algorithm to correct for the attenuation, and hence the DOI, along the LOR. If DOI correction is disabled, then the DOI is taken to be the center of the scintillator. When ATT correction is enabled, a simple correction can be applied where the same attenuation factor is applied for the whole PSF, or a full correction can be applied where different attenuation factors are applied for each bin of the PSF~\cite{fuster_2014}. Further improvements to speed and memory can be made with image masking using the default cylinder, an attenuation map, or a mask file. The default cylinder is based on the object radius in the image volume. It is important to always set the object radius greater than or equal to the size of the object in the attenuation map or mask file when masking as the matrix weights are calculated according to this value, and failure to do so will result in an error. The projection matrix can be kept in memory or calculated per projection angle. In the latter case, the memory is released before starting calculations on a new angle, thereby reducing memory requirements but increasing computation time for iterative reconstruction algorithms.
 
 \section{Materials and methods}
 
-To test the pinhole-SPECT implementation in STIR, we used Cubresa's novel silicon-photomultiplier (SiPM)-based preclinical SPECT system --- The Spark --- with the single-pinhole (SPH) collimator (Cubresa Inc., Winnipeg, Canada). This system was recently characterized with the National Electrical Manufacturers Association (NEMA) NU 1-2018 Standards for Performance Measurements of Gamma Cameras, and a corresponding GATE Monte Carlo model was validated~\cite{strugari_nema_2022}.
+To test the pinhole-SPECT implementation in STIR, Cubresa's novel silicon-photomultiplier (SiPM)-based preclinical SPECT system --- The Spark --- was used with the single-pinhole (SPH) collimator (Cubresa Inc., Winnipeg, Canada). This system was recently characterized with the National Electrical Manufacturers Association (NEMA) NU 1-2018 Standards for Performance Measurements of Gamma Cameras, and a corresponding Geant4 Application for Tomographic Emission (GATE) Monte Carlo model was validated~\cite{strugari_nema_2022}.
 
-Simulations and image reconstructions were performed on an HP Z820 workstation operating Ubuntu 18.04.5 LTS with two Intel Xeon E5-2630 2.3 GHz hexa-core CPUs and 64 GB of 1600 MHz DDR3 memory. The SPH-SPECT data for quantitative iamge assessment was simulated with GATE v9.0 while qualitative image assessment was done with \textit{in vivo} data. Tomographic images were reconstructed with STIR v5.0.2 on a single CPU core as the \texttt{PinholeSPECTUB} library has not yet been configured to use the Message Passing Interface capabilities of STIR which would allow it perform several computations in parallel.
+Simulations and image reconstructions were performed on an HP Z820 workstation operating Ubuntu 18.04.5 LTS with two Intel Xeon E5-2630 2.3 GHz hexa-core CPUs and 64 GB of 1600 MHz DDR3 memory. The SPH-SPECT data for quantitative image assessment was simulated with GATE v9.0 while qualitative image assessment was done with \textit{in vivo} data. Tomographic images were reconstructed with STIR v5.0.2 on a single CPU core as the \texttt{PinholeSPECTUB} library has not yet been configured to use the Message Passing Interface capabilities of STIR which would allow it to perform several computations in parallel.
 
 \subsection{Quantitative assessment of reconstructed data}
 
@@ -134,9 +129,9 @@ Simulations and image reconstructions were performed on an HP Z820 workstation o
 
 \subsubsection{Phantom simulations and data generation}
 
-Projection data was simulated with three different subjects containing technetium-99m (\ce{^{99m}Tc}): a NEMA Micro-PET IQ phantom, a mouse-sized NEMA triple line source scatter phantom, and a volumetric cylinder. The IQ phantom ($\diameter_{\mathrm{OD}}$ = 33.5 mm, $\mathrm{L}$ = 63.0 mm) was made from polymethyl methacrylate (PMMA) with three different regions of interest (ROIs): a spillover ROI with water and air, a uniform ROI ($\diameter_{\mathrm{ID}}$ = 30.0 mm, $\mathrm{L}$ = 15.0 mm), and an ROI with five hot rods ($\diameter_{\mathrm{ID}}$ = \{1, 2, 3, 4, 5\} mm, $\mathrm{L}$ = 20.0 mm). The triple line source scatter phantom ($\diameter_{\mathrm{OD}}$ = 25.4 mm, $\mathrm{L}$ = 60.0 mm) was made from acrylic housing three precision capillary tubes ($\diameter_{\mathrm{OD}}$ = 0.8 mm, $\diameter_{\mathrm{ID}}$ = 0.4 mm): one at the center, and two with a 10.0 mm radial offset separated by 90 $\deg$. The volumetric cylinder ($\diameter_{\mathrm{OD}}$ = 28.0 mm, $\mathrm{L}$ = 55.0 mm) was made from acrylic with a uniform ROI of radioactivity ($\diameter_{\mathrm{ID}}$ = 26.0 mm, $\mathrm{L}$ = 21.0 mm). 
+Phantom data was simulated with three different subjects containing technetium-99m (\ce{^{99m}Tc}): a NEMA Micro-PET IQ phantom, a mouse-sized NEMA triple line source scatter phantom, and a volumetric cylinder. The IQ phantom (outer diameter $\diameter_{\mathrm{OD}}$~=~33.5~mm, length $\mathrm{L}$~=~63.0~mm) was made from polymethyl methacrylate (PMMA) with three different regions of interest (ROIs): a spillover ROI with water and air, a uniform ROI (inner diameter $\diameter_{\mathrm{ID}}$~=~30.0~mm, $\mathrm{L}$~=~15.0~mm), and an ROI with five hot rods ($\diameter_{\mathrm{ID}}$~=~\{1, 2, 3, 4, 5\}~mm, $\mathrm{L}$~=~20.0~mm). The triple line source scatter phantom ($\diameter_{\mathrm{OD}}$~=~25.4~mm, $\mathrm{L}$~=~60.0~mm) was made from acrylic housing three precision capillary tubes ($\diameter_{\mathrm{OD}}$~=~0.8~mm, $\diameter_{\mathrm{ID}}$~=~0.4~mm) with one located at the center and two with a 10.0 mm radial offset separated by 90 $\deg$. The volumetric cylinder ($\diameter_{\mathrm{OD}}$~=~28.0~mm, $\mathrm{L}$~=~55.0~mm) was made from acrylic with a uniform ROI of radioactivity ($\diameter_{\mathrm{ID}}$~=~26.0~mm, $\mathrm{L}$~=~21.0~mm). 
 
-Table~\ref{tab:phantom_summary} summarizes the simulated phantom acquisitions, projection and reconstruction matrices, reconstruction algorithms, and applied analysis which are further described in the proceeding subsections. Following GATE simulation, ROOT output files were converted to Cubresa's list mode format. Projection data with 0.5 mm bins were generated from list mode data using a 30\%-wide energy window centered at 140 keV. Projection images were converted from Cubresa's projection format to Interfile format for use with STIR. Various reconstruction algorithms were then used to assess figures of merit in terms of computation cost, contrast-to-noise ratio, resolution, uniformity, and variability.
+Table~\ref{tab:phantom_summary} summarizes the simulated phantom acquisitions, projection and reconstruction matrices, reconstruction algorithms, and applied analysis which are further described in the proceeding subsections. Note that the Spark has a fixed rotation extent of 270~$\deg$ and NEMA's specification of a 3~$\deg$ angular increment was used unless stated otherwise. GATE simulation results were output to Rapid Object-Oriented Technology (ROOT) format and subsequently converted to Cubresa's list mode format. Projection data with 0.5 mm bins were generated from list mode data using a 30\%-wide energy window centered at 140 keV. Projection images were converted from Cubresa's format to Interfile format for use with STIR. Various reconstruction algorithms and matrix corrections were then used to assess figures of merit in terms of computation cost, contrast-to-noise ratio, resolution, uniformity, and variability.
 
 \begin{threeparttable}[h!]
 \caption{Summary of simulated phantom acquisitions and reconstructions.\label{tab:phantom_summary}}
@@ -145,7 +140,7 @@ Table~\ref{tab:phantom_summary} summarizes the simulated phantom acquisitions, p
 	\hline
 	Subject & Activity & Acquisition & Projections & Projection matrix & Reconstruction matrix & Algorithm\footnotemark[1] & Analysis\footnotemark[2] \\ \hline
 	
-	IQ phantom & 50 MBq & Forward prj & 64 (8 subsets) & 104$\times$104 px, 1.0 mm & 120$\times$92$\times$92 vx, 0.5 mm & OSEM & Computation cost	\\
+	IQ phantom & 50 MBq & Forward proj. & 64 (8 subsets) & 104$\times$104 px, 1.0 mm & 120$\times$92$\times$92 vx, 0.5 mm & OSEM & Computation cost	\\
 	 & & 3600 s & 91 (7 subsets) & 208$\times$208 px, 0.5 mm & 230$\times$184$\times$184 vx, 0.25 mm & OSEM, & Hot rod $\mathrm{CNR}$ \\
 	 & & & & & & OSOSL,	\\
 	 & & & & & & OSSPS	\\
@@ -166,9 +161,9 @@ Table~\ref{tab:phantom_summary} summarizes the simulated phantom acquisitions, p
 
 \subsubsection{Computation cost with different matrix corrections}
 
-To compare computation costs for different types of matrix corrections and masking, a forward projection of the IQ phantom was made with 64 views over 360~$\deg$ (see Table~\ref{tab:phantom_summary}). Memory requirements and CPU time where analyzed when storing the matrix in memory compared to calculating it per projection angle. The maximum RAM and CPU time were recorded with the \texttt{/usr/bin/time -v} command when calling STIR's \texttt{OSMAPOSL} program from the command line. The ordered subset expectation maximization (OSEM) algorithm was used with 8 subsets and 40 subiterations, and the matrix was calculated with no corrections (N-C), attenuation correction (ATT-C), DOI correction (DOI-C), PSF correction (PSF-C), all corrections (ATTDOIPSF-C), and all corrections with masking (ATTDOIPSFM-C) using the default cylindrical mask ($\diameter$ = 34.0 mm)~\cite{osem}.
+To compare computation costs for different types of matrix corrections and masking, a forward projection of the IQ phantom was made with 64 views over 360~$\deg$ (see Table~\ref{tab:phantom_summary}). Memory requirements and CPU time when storing the matrix in memory were compared to calculating it per projection angle. The maximum RAM and CPU time were recorded with Ubuntu's \texttt{/usr/bin/time -v} command when calling STIR's \texttt{OSMAPOSL} program from the command line. The ordered subset expectation maximization (OSEM) algorithm was used with 8 subsets and 40 subiterations, and the matrix was calculated with no corrections (N-C), attenuation correction (ATT-C), DOI correction (DOI-C), PSF correction (PSF-C), all corrections (ATTDOIPSF-C), and all corrections with masking (ATTDOIPSFM-C) using the default cylindrical mask ($\diameter$ = 34.0 mm)~\cite{osem}.
 
-\subsubsection{Contrast-to-noise ratios with the IQ phantom}
+\subsubsection{Contrast-to-noise ratios in the IQ phantom}
 
 A sample sinogram of the hot rods is shown in Fig.~\ref{fig:sinogram} where Fig~\ref{fig:gate_sinogram} is the GATE result and Fig.~\ref{fig:stir_sinogram} is the forward projected STIR result including attenuation, PSF, and DOI effects. Visual agreement between these sinograms suggests that 
 
@@ -180,13 +175,13 @@ Here, $\mathrm{I}_i$ is the mean intensity of the $i^\mathrm{th}$ hot rod deline
 \begin{equation}\label{eq:CV}
 \mathrm{CV} = \frac{\sigma}{\mu}.
 \end{equation}
-The reconstruction algorithms chosen for comparison of $\mathrm{CNR}$ were OSEM, the ordered subsets one step late algorithm with median root prior (OS-OSL-MRP) using a penalization factor of $\mathrm{PF}$ = 1.0~\cite{ososlmrp}, and the ordered subsets separable paraboloidal surrogate algorithm with quadratic prior (OS-SPS-QP) using $\mathrm{PF}$ = 0.3 and relaxation parameters of $\alpha$ = 1.0 and $\gamma$ = 0.1~\cite{osspsqp}.
+The reconstruction algorithms chosen for comparison of $\mathrm{CNR}$ were OSEM, the ordered subsets one step late algorithm with median root prior (OS-OSL-MRP) using a penalization factor of $\mathrm{PF}$ = 1.0~\cite{ososlmrp}, and the ordered subsets separable paraboloidal surrogate algorithm with quadratic prior (OS-SPS-QP) using $\mathrm{PF}$ = 0.3 and relaxation parameters of $\alpha$ = 1.0 and $\gamma$ = 0.1~\cite{osspsqp}. The OS-SPS-QP algorithm was initialized with the OSEM image after 21 subiterations.
 
-\subsubsection{Resolution with the scatter phantom}
+\subsubsection{Resolution in the scatter phantom}
 
 To compare resolution with different types of corrections available in the \texttt{PinholeSPECTUB} library, the triple line source scatter phantom projection images were reconstructed with the OSEM algorithm in the following configurations: N-C, ATT-C, DOI-C, PSF-C, and ATTDOIPSF-C. In-plane resolution was calculated according to NEMA's methodology from the average full width at half maximum (FWHM) in x and y directions from three 3.5 mm-thick transverse slices: one at the center, and two at $\pm$~14.5~mm. The average of all x and y FWHM results were then calculated.
 
-\subsubsection{Uniformity and variability with the volumetric cylinder}
+\subsubsection{Uniformity and variability in the volumetric cylinder}
 
 To compare uniformity and variability with different types of corrections available in the \texttt{PinholeSPECTUB} library, the volumetric cylinder projection images were also reconstructed with the OSEM algorithm in the following configurations: N-C, ATT-C, DOI-C, PSF-C, and \mbox{ATTDOIPSF-C}. Variability was assessed from the coefficient of variation using Eq.~\ref{eq:CV}, and uniformity $\mathrm{U}$ was assessed as
 \begin{equation}
@@ -250,20 +245,39 @@ An \textit{in vivo} dataset was chosen to demonstrate qualitative image quality 
 \end{tablenotes}
 \end{threeparttable}
 
-\subsubsection{Contrast-to-noise ratios with the IQ phantom}
+\subsubsection{Contrast-to-noise ratios in the IQ phantom}
 
 
 
-\subsubsection{Resolution with the scatter phantom}
+%-------------------------------------------------
+\noindent \textbf{Figure~\ref{fig:CNR} goes here.}
+%-------------------------------------------------
+
+\subsubsection{Resolution in the scatter phantom}
 
 
 
-\subsubsection{Uniformity and variability with the volumetric cylinder}
+%-------------------------------------------------
+\noindent \textbf{Figure~\ref{fig:resolution} goes here.}
+%-------------------------------------------------
 
+
+\subsubsection{Uniformity and variability in the volumetric cylinder}
+
+
+
+%-------------------------------------------------
+\noindent \textbf{Figure~\ref{fig:unformity_variability} goes here.}
+%-------------------------------------------------
 
 
 \subsection{Qualitative assessment of reconstructed \textit{in vivo} data}
 
+
+
+%-------------------------------------------------
+\noindent \textbf{Figure~\ref{fig:PinholeSPECTUB_coords} goes here.}
+%-------------------------------------------------
 
 \section{Discussion}
 
@@ -271,57 +285,41 @@ An \textit{in vivo} dataset was chosen to demonstrate qualitative image quality 
 \section{Conclusions}
 
 
+%\section{Nomenclature}
 
-\section{Article types}
+%\subsection{Resource Identification Initiative}
+%To take part in the Resource Identification Initiative, please use the corresponding catalog number and RRID in your current manuscript. For more information about the project and for steps on how to search for an RRID, please click \href{http://www.frontiersin.org/files/pdf/letter_to_author.pdf}{here}.
 
-For requirements for a specific article type please refer to the Article Types on any Frontiers journal page. Please also refer to  \href{http://home.frontiersin.org/about/author-guidelines#Sections}{Author Guidelines} for further information on how to organize your manuscript in the required sections or their equivalents for your field
+%\section{Additional Requirements}
 
-% For Original Research articles, please note that the Material and Methods section can be placed in any of the following ways: before Results, before Discussion or after Discussion.
-
-\section{Manuscript Formatting}
-
-\subsection{Heading Levels}
-
-%There are 5 heading levels
-
-\subsection{Level 2}
-\subsubsection{Level 3}
-\paragraph{Level 4}
-\subparagraph{Level 5}
-
-\section{Nomenclature}
-
-\subsection{Resource Identification Initiative}
-To take part in the Resource Identification Initiative, please use the corresponding catalog number and RRID in your current manuscript. For more information about the project and for steps on how to search for an RRID, please click \href{http://www.frontiersin.org/files/pdf/letter_to_author.pdf}{here}.
-
-\subsection{Life Science Identifiers}
-Life Science Identifiers (LSIDs) for ZOOBANK registered names or nomenclatural acts should be listed in the manuscript before the keywords. For more information on LSIDs please see \href{https://www.frontiersin.org/about/author-guidelines#Nomenclature}{Inclusion of Zoological Nomenclature} section of the guidelines.
-
-
-\section{Additional Requirements}
-
-For additional requirements for specific article types and further information please refer to \href{http://www.frontiersin.org/about/AuthorGuidelines#AdditionalRequirements}{Author Guidelines}.
+%For additional requirements for specific article types and further information please refer to \href{http://www.frontiersin.org/about/AuthorGuidelines#AdditionalRequirements}{Author Guidelines}.
 
 \section*{Conflict of Interest Statement}
+Dalhousie University and Cubresa share an academic-industry research collaboration.
+
 %All financial, commercial or other relationships that might be perceived by the academic community as representing a potential conflict of interest must be disclosed. If no such relationship exists, authors will be asked to confirm the following statement: 
 
-The authors declare that the research was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest.
+%The authors declare that the research was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest.
 
 \section*{Author Contributions}
+MS wrote the \texttt{ProjMatrixByBinPinholeSPECTUB} class to integrate prototype pinhole-SPECT system matrix estimation software into STIR. MS also performed data collection, image reconstruction, analysis, and wrote the manuscript. CF wrote the prototype pinhole-SPECT system matrix estimation software. All authors contributed to the revision of the manuscript and read and approved the final draft.
 
-The Author Contributions section is mandatory for all articles, including articles by sole authors. If an appropriate statement is not provided on submission, a standard one will be inserted during the production process. The Author Contributions statement must describe the contributions of individual authors referred to by their initials and, in doing so, all authors agree to be accountable for the content of the work. Please see  \href{https://www.frontiersin.org/about/policies-and-publication-ethics#AuthorshipAuthorResponsibilities}{here} for full authorship criteria.
+%The Author Contributions section is mandatory for all articles, including articles by sole authors. If an appropriate statement is not provided on submission, a standard one will be inserted during the production process. The Author Contributions statement must describe the contributions of individual authors referred to by their initials and, in doing so, all authors agree to be accountable for the content of the work. Please see  \href{https://www.frontiersin.org/about/policies-and-publication-ethics#AuthorshipAuthorResponsibilities}{here} for full authorship criteria.
 
 \section*{Funding}
-Details of all funding sources should be provided, including grant numbers if applicable. Please ensure to add all necessary funding information, as after publication this is no longer possible.
+This work was supported in part by a Nova Scotia Graduate Scholarship, a series of NSERC grants in collaboration with Cubresa Inc., a CFI grant (37854), and a CIHR grant (PJT- 153319). The software is maintained in part by CCP SyneRBI (EPSRC Grant EP/T026693/1). 
+
+%Details of all funding sources should be provided, including grant numbers if applicable. Please ensure to add all necessary funding information, as after publication this is no longer possible.
 
 \section*{Acknowledgments}
-This is a short text to acknowledge the contributions of specific colleagues, institutions, or agencies that aided the efforts of the authors.
+The authors would like to thank Drs. Sultan Darvesh, G. Andrew Reid, and Ian Pottie for allowing the acquisition of a single-pinhole SPECT dataset for this study during the investigation of a novel radiotracer for Alzheimer's disease diagnosis as well as Dr. Christa Davis for performing the tail-vein injection. The main author would like to thank the Collaborative Computation Project (CCP) for supporting the integration of the software into the open-source STIR framework. The authors would also like to thank Dr. Daniel Deidda for engaging in discussion during the development of the integration software.
 
-\section*{Supplemental Data}
- \href{http://home.frontiersin.org/about/author-guidelines#SupplementaryMaterial}{Supplementary Material} should be uploaded separately on submission, if there are Supplementary Figures, please include the caption in the same file as the figure. LaTeX Supplementary Material templates can be found in the Frontiers LaTeX folder.
+%This is a short text to acknowledge the contributions of specific colleagues, institutions, or agencies that aided the efforts of the authors.
+
 
 \section*{Data Availability Statement}
-The datasets [GENERATED/ANALYZED] for this study can be found in the [NAME OF REPOSITORY] [LINK].
+The datasets used and/or analyzed during the current study are available from the corresponding author on reasonable request.
+
 % Please see the availability of data guidelines for more information, at https://www.frontiersin.org/about/author-guidelines#AvailabilityofData
 
 \bibliographystyle{Frontiers-Harvard} %  Many Frontiers journals use the Harvard referencing system (Author-date), to find the style and resources for the journal you are submitting to: https://zendesk.frontiersin.org/hc/en-us/articles/360017860337-Frontiers-Reference-Styles-by-Journal. For Humanities and Social Sciences articles please include page numbers in the in-text citations 
@@ -339,38 +337,150 @@ The datasets [GENERATED/ANALYZED] for this study can be found in the [NAME OF RE
 %%% If using *.tif files convert them to .jpg or .png
 %%%  NB logo1.eps is required in the path in order to correctly compile front page header %%%
 
+%-------------------------------------------------
 \begin{figure}[h!]
+\setcounter{figure}{0}
 \begin{center}
-\includegraphics[width=10cm]{logo1}% This is a *.eps file
+\includegraphics[height=5cm]{Figures/STIR-UsersGuide_PinholeSPECTUB}
 \end{center}
-\caption{ Enter the caption for your figure here.  Repeat as  necessary for each of your figures}\label{fig:1}
+\caption{\texttt{PinholeSPECTUB} system of reference and sign criteria illustrated for a polygonal collimator setup. Note that the projection matrix adheres to STIR's coordinate system as indicated by the x, y, and z axes. The detector and collimator use a rotating frame of reference where the transaxial x' and axial z' axes coincide with STIR's axes when the detector is at 0 $\mathrm{\deg}$. The collimator uses a right-handed coordinate system as indicated by the y' axis which points toward the detector. Further information is given in the text and in STIR's documentation.}\label{fig:PinholeSPECTUB_coords}
 \end{figure}
 
-\setcounter{figure}{2}
-\setcounter{subfigure}{0}
+
+%-------------------------------------------------
 \begin{subfigure}
-\setcounter{figure}{2}
-\setcounter{subfigure}{0}
     \centering
+    	\setcounter{figure}{4}
+	\setcounter{subfigure}{0}
     \begin{minipage}[b]{0.5\textwidth}
-        \includegraphics[width=\linewidth]{logo1.eps}
-        \caption{This is Subfigure 1.}
-        \label{fig:Subfigure 1}
+        %\includegraphics[width=\linewidth]{Figures/sinogram_forward.pdf}
+        \caption{sinogram forward.}
+        \label{fig:sino_forward}
     \end{minipage}  
    
-\setcounter{figure}{2}
-\setcounter{subfigure}{1}
+	\setcounter{figure}{4}
+	\setcounter{subfigure}{1}
     \begin{minipage}[b]{0.5\textwidth}
-        \includegraphics[width=\linewidth]{logo2.eps}
-        \caption{This is Subfigure 2.}
-        \label{fig:Subfigure 2}
+        %\includegraphics[width=\linewidth]{Figures/sinogram_simulated.pdf}
+        \caption{sinogram forward.}
+        \label{fig:sino_simulated}
     \end{minipage}
+    
+\setcounter{figure}{4}
+\setcounter{subfigure}{-1}
+\caption{Sinograms}\label{fig:sinograms}
+\end{subfigure}
 
+
+%-------------------------------------------------
+\begin{subfigure}
+    \centering
+    	\setcounter{figure}{4}
+	\setcounter{subfigure}{0}
+    \begin{minipage}[b]{0.5\textwidth}
+        %\includegraphics[width=\linewidth]{Figures/reconstruction_hotrods.pdf}
+        \caption{recon hotrods.}
+        \label{fig:recon_hotrods}
+    \end{minipage}  
+   
+	\setcounter{figure}{4}
+	\setcounter{subfigure}{1}
+    \begin{minipage}[b]{0.5\textwidth}
+        %\includegraphics[width=\linewidth]{Figures/reconstruction_resolution.pdf}
+        \caption{recon resolution.}
+        \label{fig:recon_resolution}
+    \end{minipage}
+    
+    	\setcounter{figure}{4}
+	\setcounter{subfigure}{1}
+    \begin{minipage}[b]{0.5\textwidth}
+        %\includegraphics[width=\linewidth]{Figures/reconstruction_cylinder.pdf}
+        \caption{recon cylinder.}
+        \label{fig:recon_cylinder}
+    \end{minipage}
+    
+\setcounter{figure}{4}
+\setcounter{subfigure}{-1}
+\caption{OSEM images after 10 subiterations and no corrections. 1. Axial sum of Micro-PET IQ hot rods, 2. Axial sum of the mouse- sized NEMA phantom, 3. Axial sum of the volumetric cylinder, and 4.  Images 1-3 are normalized and image 4 is thresholded. Note the expected distributions of \ce{^{99m}Tc}.}\label{fig:reconstructions}
+\end{subfigure}
+
+
+%-------------------------------------------------
+\begin{subfigure}
+    \centering
+    	\setcounter{figure}{2}
+	\setcounter{subfigure}{0}
+    \begin{minipage}[b]{0.3\textwidth}
+        \includegraphics[width=\linewidth]{Figures/SNR_1mmHotRod.pdf}
+        \caption{1 mm hot rod.}
+        \label{fig:1mmRod}
+    \end{minipage}  
+   
+	\setcounter{figure}{2}
+	\setcounter{subfigure}{1}
+    \begin{minipage}[b]{0.3\textwidth}
+        \includegraphics[width=\linewidth]{Figures/SNR_3mmHotRod.pdf}
+        \caption{3 mm hot rod.}
+        \label{fig:3mmRod}
+    \end{minipage}
+    
+    \setcounter{figure}{2}
+	\setcounter{subfigure}{2}
+    \begin{minipage}[b]{0.3\textwidth}
+        \includegraphics[width=\linewidth]{Figures/SNR_5mmHotRod.pdf}
+        \caption{5 mm hot rod}
+        \label{fig:5mmRod}
+    \end{minipage}
+    
 \setcounter{figure}{2}
 \setcounter{subfigure}{-1}
-    \caption{Enter the caption for your subfigure here. \textbf{(A)} This is the caption for Subfigure 1. \textbf{(B)} This is the caption for Subfigure 2.}
-    \label{fig: subfigures}
+\caption{CNR of 1 mm (\textbf{\ref{fig:1mmRod}.}), 3 mm (\textbf{\ref{fig:3mmRod}.}), and 5 mm (\textbf{\ref{fig:5mmRod}.}) IQ phantom hot rods comparing OSEM (solid line), OS-OSL-MRP (dotted line), and OS-SPS-QP (dashed line) over 200 subiterations without matrix corrections. The OS-SPS-QP reconstruction was initialized using the OSEM image at 21 subiterations. Hot rod contrast was calculated relative to the central region void of \ce{^{99m}Tc}, and CV was calculated in the uniform \ce{^{99m}Tc} region.}\label{fig:CNR}
 \end{subfigure}
+
+
+%-------------------------------------------------
+\begin{figure}[h!]
+\setcounter{figure}{2}
+\begin{center}
+\includegraphics[width=0.5\linewidth]{Figures/Resolution.pdf}
+\end{center}
+\caption{SPECT spatial resolution with scatter in the mouse-sized NEMA triple line source phantom using the OSEM algorithm with 7 subsets.}\label{fig:resolution}
+\end{figure}
+
+
+%-------------------------------------------------
+\begin{subfigure}
+    \centering
+    	\setcounter{figure}{4}
+	\setcounter{subfigure}{0}
+    \begin{minipage}[b]{0.5\textwidth}
+        \includegraphics[width=\linewidth]{Figures/VSAC_Uniformity.pdf}
+        \caption{Uniformity.}
+        \label{fig:uniformity}
+    \end{minipage}  
+   
+	\setcounter{figure}{4}
+	\setcounter{subfigure}{1}
+    \begin{minipage}[b]{0.5\textwidth}
+        \includegraphics[width=\linewidth]{Figures/VSAC_CV.pdf}
+        \caption{Variability.}
+        \label{fig:variability}
+    \end{minipage}
+    
+\setcounter{figure}{4}
+\setcounter{subfigure}{-1}
+\caption{SPECT uniformity (\textbf{\ref{fig:uniformity}}) and variability (\textbf{\ref{fig:variability}}) in the volumetric cylinder using the OSEM algorithm with 7 subsets.}\label{fig:uniformity_variability}
+\end{subfigure}
+
+
+%-------------------------------------------------
+\begin{figure}[h!]
+\setcounter{figure}{2}
+\begin{center}
+%\includegraphics[width=0.5\linewidth]{Figures/InVivo.pdf}
+\end{center}
+\caption{Sagittal fused SPECT/CT of the \textit{in vivo} mouse with a window ranging from 0 to 1. The \ce{^{123}I} distribution shows a nonpersistent tracer in the brain.}\label{fig:invivo}
+\end{figure}
 
 %%% If you don't add the figures in the LaTeX files, please upload them when submitting the article.
 %%% Frontiers will add the figures at the end of the provisional pdf automatically

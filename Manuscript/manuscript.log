@@ -1,75 +1,77 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.11.24)  28 NOV 2022 09:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  12 DEC 2022 22:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **manuscript.tex
 (./manuscript.tex
-LaTeX2e <2020-02-02> patch level 2
-L3 programming layer <2020-02-14> (./FrontiersinHarvard.cls
+LaTeX2e <2020-02-02> patch level 5
+L3 programming layer <2020-03-06> (./FrontiersinHarvard.cls
 Document Class: FrontiersinHarvard 2016/11/10 2.6
-(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2018/08/11 v1.3c Input encoding file
-\inpenc@prehook=\toks14
-\inpenc@posthook=\toks15
+\inpenc@prehook=\toks15
+\inpenc@posthook=\toks16
 )
-(/usr/share/texlive/texmf-dist/tex/latex/crop/crop.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/crop/crop.sty
 Package: crop 2003/05/20 v1.9 crop marks (mf)
 \stockwidth=\dimen134
 \stockheight=\dimen135
 \CROP@index=\count167
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2019/11/23 v1.2a Standard LaTeX Color (DPC)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 147.
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 105.
 )
 \CROP@offset=\count168
-)
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package crop Info: Local config file crop.cfg used on input line 605.
+
+(/usr/local/texlive/2020/texmf-dist/tex/xelatex/xetexconfig/crop.cfg))
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks16
+\KV@toks@=\toks17
 )
 \Gin@req@height=\dimen136
 \Gin@req@width=\dimen137
 )
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2020/01/20 v2.17e AMS math features
 \@mathmargin=\skip47
 
 For additional information on amsmath, use the `?' option.
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks17
+\@emptytoks=\toks18
 \ex@=\dimen138
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen139
 )
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count169
@@ -92,38 +94,38 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
 \dotsspace@=\muskip16
 \c@parentequation=\count176
 \dspbrk@lvl=\count177
-\tag@help=\toks18
+\tag@help=\toks19
 \row@=\count178
 \column@=\count179
 \maxfields@=\count180
-\andhelp@=\toks19
+\andhelp@=\toks20
 \eqnshift@=\dimen141
 \alignsep@=\dimen142
 \tagshift@=\dimen143
 \tagwidth@=\dimen144
 \totwidth@=\dimen145
 \lineht@=\dimen146
-\@envbody=\toks20
+\@envbody=\toks21
 \multlinegap=\skip48
 \multlinetaggap=\skip49
-\mathdisplay@stack=\toks21
+\mathdisplay@stack=\toks22
 LaTeX Info: Redefining \[ on input line 2859.
 LaTeX Info: Redefining \] on input line 2860.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/tools/array.sty
 Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
 \col@sep=\dimen147
 \ar@mcellbox=\box47
 \extrarowheight=\dimen148
-\NC@list=\toks22
+\NC@list=\toks23
 \extratabsurround=\skip50
 \backup@length=\skip51
 \ar@cellbox=\box48
 )
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
@@ -131,7 +133,7 @@ LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/sttools/flushend.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/sttools/flushend.sty
 Package: flushend 2017/03/27 v3.3 Balancing columns in twocolumn mode
 \flushend@@lastskip@a=\skip52
 \flushend@@lastskip@b=\skip53
@@ -147,10 +149,10 @@ Package: flushend 2017/03/27 v3.3 Balancing columns in twocolumn mode
 \flushend@@tempbox@c=\box52
 \@viper=\box53
 \hold@viper=\box54
-\atColsBreak=\toks23
-\atColsEnd=\toks24
+\atColsBreak=\toks24
+\atColsEnd=\toks25
 
-(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count182
 ))
@@ -158,50 +160,51 @@ Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
 Package: stfloats 1999/10/22
 \@dblbotnum=\count183
 \c@dblbotnumber=\count184
-) (/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2017/10/31 v2.20.4
-\thm@style=\toks25
-\thm@bodyfont=\toks26
-\thm@headfont=\toks27
-\thm@notefont=\toks28
-\thm@headpunct=\toks29
+\thm@style=\toks26
+\thm@bodyfont=\toks27
+\thm@headfont=\toks28
+\thm@notefont=\toks29
+\thm@headpunct=\toks30
 \thm@preskip=\skip55
 \thm@postskip=\skip56
 \thm@headsep=\skip57
-\dth@everypar=\toks30
+\dth@everypar=\toks31
 )
-(/usr/share/texlive/texmf-dist/tex/latex/changepage/chngpage.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/changepage/chngpage.sty
 Package: chngpage 2009/10/20 v1.2b change page layout
 \c@cp@cnt=\count185
 \c@cp@tempcnt=\count186
 )
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/times.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/times.sty
 Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
 )
-(/usr/share/texlive/texmf-dist/tex/latex/datetime/datetime.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/datetime/datetime.sty
 Package: datetime 2015/03/20 v2.60 Date Time Package
 
-(/usr/share/texlive/texmf-dist/tex/latex/fmtcount/fmtcount.sty
-Package: fmtcount 2020/01/30 v3.06
+(/usr/local/texlive/2020/texmf-dist/tex/latex/fmtcount/fmtcount.sty
+Package: fmtcount 2020/01/30 v3.07
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 
-(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
-(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks31
-\XKV@tempa@toks=\toks32
+(/usr/local/texlive/2020/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/local/texlive/2020/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks32
+\XKV@tempa@toks=\toks33
 )
 \XKV@depth=\count187
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/fmtcount/fcprefix.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/fmtcount/fcprefix.sty
 Package: fcprefix 2012/09/28
 
-(/usr/share/texlive/texmf-dist/tex/latex/fmtcount/fcnumparser.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/fmtcount/fcnumparser.sty
 Package: fcnumparser 2017/06/15
 \fc@digit@counter=\count188
 ))
@@ -215,7 +218,7 @@ Package: fcnumparser 2017/06/15
 \@DT@loopN=\count196
 \@DT@X=\count197
 )
-(/usr/share/texlive/texmf-dist/tex/latex/datetime/datetime-defaults.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/datetime/datetime-defaults.sty
 Package: datetime-defaults 2013/09/10
 )
 \@day=\count198
@@ -235,42 +238,41 @@ put line 308.
 \@dtctr=\count276
 \dayofyear=\count277
 \dayofweek=\count278
-\dt@a=\toks33
-\dt@b=\toks34
+\dt@a=\toks34
+\dt@b=\toks35
 )
-(/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf.sty
 Package: epstopdf 2020-01-24 v2.11 Conversion with epstopdf on the fly (HO)
 
-(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+(/usr/local/texlive/2020/texmf-dist/tex/generic/infwarerr/infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/grfext/grfext.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/grfext/grfext.sty
 Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
 
-(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+(/usr/local/texlive/2020/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-))
-(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+)) (/usr/local/texlive/2020/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
 
-(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+(/usr/local/texlive/2020/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+(/usr/local/texlive/2020/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
 Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/pdftexcmds/pdftexcmds.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/pdftexcmds/pdftexcmds.sty
 Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
-Package: iftex 2019/11/07 v1.0c TeX engine tests
+(/usr/local/texlive/2020/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
@@ -279,21 +281,21 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 504.
 
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+(/usr/local/texlive/2020/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 )))
-(/usr/share/texlive/texmf-dist/tex/latex/parskip/parskip.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/parskip/parskip.sty
 Rollback for package 'parskip' requested -> version 'v1'.
          This corresponds to the release introduced on 2001-04-09.
 
-(/usr/share/texlive/texmf-dist/tex/latex/parskip/parskip-2001-04-09.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/parskip/parskip-2001-04-09.sty
 Package: parskip 2001/04/09 non-zero parskip adjustments
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Package option `usenames' ignored on input line 216.
@@ -309,13 +311,13 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/dvipsnam.def
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/dvipsnam.def
 File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2020/01/03 v3.4h Customizing captions (AR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 61.
 \captionmargin=\dimen153
@@ -338,7 +340,7 @@ See the caption package documentation for explanation.
 
 \c@caption@flags=\count279
 \c@continuedfloat=\count280
-) (/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2020/01/22 v1.3d Sub-captions (AR)
 )
 \c@section=\count281
@@ -356,49 +358,48 @@ Package: subcaption 2020/01/22 v1.3d Sub-captions (AR)
 \tempdime=\dimen161
 \temptbox=\box55
 
-(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip63
 \bibsep=\skip64
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count289
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2020/01/14 v7.00d Hypertext links for LaTeX
 
-(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pdfescape/pdfescape.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/hycolor/hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
 Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/auxhook/auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
 \@linkdim=\dimen162
 \Hy@linkcounter=\count290
 \Hy@pagecounter=\count291
 
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+(/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2020/01/14 v7.00d Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-(/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
+(/usr/local/texlive/2020/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+(/usr/local/texlive/2020/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
 \Hy@SavedSpaceFactor=\count292
-\pdfmajorversion=\count293
 Package hyperref Info: Hyper figures OFF on input line 4547.
 Package hyperref Info: Link nesting OFF on input line 4552.
 Package hyperref Info: Hyper index ON on input line 4555.
@@ -407,18 +408,18 @@ Package hyperref Info: Backreferencing OFF on input line 4567.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4800.
 LaTeX Info: Redefining \href on input line 5070.
-\c@Hy@tempcnt=\count294
+\c@Hy@tempcnt=\count293
 LaTeX Info: Redefining \url on input line 5159.
 \XeTeXLinkMargin=\dimen163
 
-(/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+(/usr/local/texlive/2020/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 
-(/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+(/usr/local/texlive/2020/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count295
+\Fld@menulength=\count294
 \Field@Width=\dimen164
 \Fld@charsize=\dimen165
 Package hyperref Info: Hyper figures OFF on input line 6430.
@@ -431,64 +432,63 @@ Package hyperref Info: PDF/A mode OFF on input line 6460.
 LaTeX Info: Redefining \ref on input line 6500.
 LaTeX Info: Redefining \pageref on input line 6504.
 
-(/usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty
+(/usr/local/texlive/2020/texmf-dist/tex/generic/atbegshi/atbegshi.sty
 Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
 Package atbegshi Info: Package `crop' patched.
 )
-\Hy@abspage=\count296
-\c@Item=\count297
-\c@Hfootnote=\count298
+\Hy@abspage=\count295
+\c@Item=\count296
+\c@Hfootnote=\count297
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+(/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2020/01/14 v7.00d Hyperref driver for pdfTeX
 
-(/usr/share/texlive/texmf-dist/tex/latex/atveryend/atveryend.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/atveryend/atveryend.sty
 Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
 )
-\Fld@listcount=\count299
-\c@bookmark@seq@number=\count300
+\Fld@listcount=\count298
+\c@bookmark@seq@number=\count299
 
-(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
 
-(/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+(/usr/local/texlive/2020/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 86.
 )
 \Hy@SectionHShift=\skip65
-)
-(/usr/share/texlive/texmf-dist/tex/latex/lineno/lineno.sty
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/lineno/lineno.sty
 Package: lineno 2005/11/02 line numbers on paragraphs v4.41
-\linenopenalty=\count301
-\output=\toks35
-\linenoprevgraf=\count302
+\linenopenalty=\count300
+\output=\toks36
+\linenoprevgraf=\count301
 \linenumbersep=\dimen166
 \linenumberwidth=\dimen167
-\c@linenumber=\count303
-\c@pagewiselinenumber=\count304
-\c@LN@truepage=\count305
-\c@internallinenumber=\count306
-\c@internallinenumbers=\count307
+\c@linenumber=\count302
+\c@pagewiselinenumber=\count303
+\c@LN@truepage=\count304
+\c@internallinenumber=\count305
+\c@internallinenumbers=\count306
 \quotelinenumbersep=\dimen168
 \bframerule=\dimen169
 \bframesep=\dimen170
 \bframebox=\box56
 LaTeX Info: Redefining \\ on input line 3056.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/microtype/microtype.sty
 Package: microtype 2019/11/18 v2.7d Micro-typographical refinements (RS)
-\MT@toks=\toks36
-\MT@count=\count308
+\MT@toks=\toks37
+\MT@count=\count307
 LaTeX Info: Redefining \textls on input line 790.
 \MT@outer@kern=\dimen171
 LaTeX Info: Redefining \textmicrotypecontext on input line 1354.
-\MT@listname@count=\count309
+\MT@listname@count=\count308
 
-(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype-pdftex.def
+(/usr/local/texlive/2020/texmf-dist/tex/latex/microtype/microtype-pdftex.def
 File: microtype-pdftex.def 2019/11/18 v2.7d Definitions specific to pdftex (RS)
 
 LaTeX Info: Redefining \lsstyle on input line 914.
@@ -497,53 +497,52 @@ LaTeX Info: Redefining \lslig on input line 914.
 )
 Package microtype Info: Loading configuration file microtype.cfg.
 
-(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.cfg
+(/usr/local/texlive/2020/texmf-dist/tex/latex/microtype/microtype.cfg
 File: microtype.cfg 2019/11/18 v2.7d microtype main configuration file (RS)
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
-(/usr/share/texlive/texmf-dist/tex/latex/mhchem/mhchem.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/mhchem/mhchem.sty
 Package: mhchem 2018/06/22 v4.08 for typesetting chemical formulae
 
-(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2020-02-14 L3 programming layer (loader) 
+(/usr/local/texlive/2020/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2020-03-06 L3 programming layer (loader) 
 
-(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
-File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count310
+(/usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count309
 \l__pdf_internal_box=\box57
-))
-(/usr/share/texlive/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
-Package: l3keys2e 2020-02-14 LaTeX2e option processing using LaTeX3 keys
-)
-(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+)) (/usr/local/texlive/2020/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.s
+ty
+Package: l3keys2e 2020-03-06 LaTeX2e option processing using LaTeX3 keys
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count311
-\calc@Bcount=\count312
+\calc@Acount=\count310
+\calc@Bcount=\count311
 \calc@Adimen=\dimen172
 \calc@Bdimen=\dimen173
 \calc@Askip=\skip67
 \calc@Bskip=\skip68
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count313
+\calc@Ccount=\count312
 \calc@Cskip=\skip69
 )
-(/usr/share/texlive/texmf-dist/tex/latex/chemgreek/chemgreek.sty
-(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
-Package: xparse 2020-02-14 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count314
-\g__xparse_grabber_int=\count315
-\l__xparse_m_args_int=\count316
-\l__xparse_v_nesting_int=\count317
+(/usr/local/texlive/2020/texmf-dist/tex/latex/chemgreek/chemgreek.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2020-03-06 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count313
+\g__xparse_grabber_int=\count314
+\l__xparse_m_args_int=\count315
+\l__xparse_v_nesting_int=\count316
 )
 Package: chemgreek 2020/01/16 v1.1a interface for upright Greek letters for use
  in chemistry (CN)
-\l__chemgreek_tmpa_int=\count318
-\g__chemgreek_tmpa_int=\count319
+\l__chemgreek_tmpa_int=\count317
+\g__chemgreek_tmpa_int=\count318
 )
-\l__mhchem_ce_distanceFromLastComma_int=\count320
+\l__mhchem_ce_distanceFromLastComma_int=\count319
 \__mhchem_arrow_extPgfLength_skip=\skip70
 \mhchem@minispace@tmp=\skip71
 \mhchem@minibackspace@tmp=\skip72
@@ -554,7 +553,7 @@ Package: chemgreek 2020/01/16 v1.1a interface for upright Greek letters for use
 \mhchem@smallbondwidth=\skip77
 \mhchem@bondtmp@minussidebearingleft=\skip78
 \mhchem@bondtmp@minussidebearingright=\skip79
-\l__mhchem_option_version_int=\count321
+\l__mhchem_option_version_int=\count320
 \mhchem@option@minusmathsidebearingleft=\dimen174
 \mhchem@option@minusmathsidebearingright=\dimen175
 \mhchem@option@minustextsidebearingleft=\dimen176
@@ -568,65 +567,65 @@ Package mhchem Warning: You did not specify a 'version' option for the mhchem
 (mhchem)                different output with the same input in future versions
 .
 
-) (/usr/share/texlive/texmf-dist/tex/latex/wasysym/wasysym.sty
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/wasysym/wasysym.sty
 Package: wasysym 2020/01/19 v2.4 Wasy-2 symbol support package
 \symwasy=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `wasy' in version `bold'
 (Font)                  U/wasy/m/n --> U/wasy/b/n on input line 93.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
 \multirow@colwidth=\skip80
-\multirow@cntb=\count322
+\multirow@cntb=\count321
 \multirow@dima=\skip81
 \bigstrutjot=\dimen178
 )
-(/usr/share/texlive/texmf-dist/tex/latex/threeparttable/threeparttable.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/threeparttable/threeparttable.sty
 Package: threeparttable 2003/06/13  v 3.0
 \@tempboxb=\box58
-)
-(./manuscript.aux)
+) (./manuscript.aux)
 \openout1 = `manuscript.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
 LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 5
-8.
- (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+4.
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
-(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+(/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count323
+\scratchcounter=\count322
 \scratchdimen=\dimen179
 \scratchbox=\box59
-\nofMPsegments=\count324
-\nofMParguments=\count325
-\everyMPshowfont=\toks37
-\MPscratchCnt=\count326
+\nofMPsegments=\count323
+\nofMParguments=\count324
+\everyMPshowfont=\toks38
+\MPscratchCnt=\count325
 \MPscratchDim=\dimen180
-\MPnumerator=\count327
-\makeMPintoPDFobject=\count328
-\everyMPtoPDFconversion=\toks38
+\MPnumerator=\count326
+\makeMPintoPDFobject=\count327
+\everyMPtoPDFconversion=\toks39
 )
-Package crop Info: requested driver: `' on input line 58.
-Package crop Info: detected driver: `pdftex' on input line 58.
-Package crop Info: using `pdftex' graphics driver on input line 58.
- (/usr/share/texlive/texmf-dist/tex/latex/fmtcount/fc-english.def
+Package crop Info: requested driver: `' on input line 54.
+Package crop Info: detected driver: `pdftex' on input line 54.
+Package crop Info: using `pdftex' graphics driver on input line 54.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/fmtcount/fc-english.def
 File: fc-english.def 2016/01/12
 )
 Package caption Info: Begin \AtBeginDocument code.
@@ -634,28 +633,28 @@ Package caption Info: hyperref package is loaded.
 Package caption Info: threeparttable package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box60
-Package hyperref Info: Link coloring OFF on input line 58.
+Package hyperref Info: Link coloring OFF on input line 54.
 
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 
-(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
+(/usr/local/texlive/2020/texmf-dist/tex/latex/refcount/refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+(/usr/local/texlive/2020/texmf-dist/tex/generic/gettitlestring/gettitlestring.s
+ty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count329
+\c@section@level=\count328
 )
-LaTeX Info: Redefining \ref on input line 58.
-LaTeX Info: Redefining \pageref on input line 58.
-LaTeX Info: Redefining \nameref on input line 58.
-
-(./manuscript.out) (./manuscript.out)
+LaTeX Info: Redefining \ref on input line 54.
+LaTeX Info: Redefining \pageref on input line 54.
+LaTeX Info: Redefining \nameref on input line 54.
+ (./manuscript.out) (./manuscript.out)
 \@outlinefile=\write3
 \openout3 = `manuscript.out'.
 
-LaTeX Info: Redefining \microtypecontext on input line 58.
+LaTeX Info: Redefining \microtypecontext on input line 54.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2),
 (microtype)             factor: 1500.
@@ -663,85 +662,104 @@ Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `basictext'.
-LaTeX Info: Redefining \showhyphens on input line 58.
+LaTeX Info: Redefining \showhyphens on input line 54.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
 
-(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-ptm.cfg
+(/usr/local/texlive/2020/texmf-dist/tex/latex/microtype/mt-ptm.cfg
 File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 )
 
-Package chemgreek Info: Activating mapping `default' on line 58.
+Package chemgreek Info: Activating mapping `default' on line 54.
 
-LaTeX Font Info:    Trying to load font information for OT1+phv on input line 7
-3.
+LaTeX Font Info:    Trying to load font information for OT1+phv on input line 6
+9.
 
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1phv.fd
+(/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
+
+
+LaTeX Warning: Font shape declaration has incorrect series value `mc'.
+               It should not contain an `m'! Please correct it.
+               Found on input line 21.
+
+
+LaTeX Warning: Font shape declaration has incorrect series value `mc'.
+               It should not contain an `m'! Please correct it.
+               Found on input line 24.
+
+
+LaTeX Warning: Font shape declaration has incorrect series value `mc'.
+               It should not contain an `m'! Please correct it.
+               Found on input line 27.
+
+
+LaTeX Warning: Font shape declaration has incorrect series value `mc'.
+               It should not contain an `m'! Please correct it.
+               Found on input line 47.
+
 )
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `phv' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
+
+
+LaTeX Warning: File `./logo1.eps' not found on input line 69.
+
 Package epstopdf Info: Source file: <./logo1.eps>
-(epstopdf)                    date: 2022-11-23 13:11:14
-(epstopdf)                    size: 2415779 bytes
 (epstopdf)             Output file: <./logo1-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-23 15:02:59
-(epstopdf)                    size: 27674 bytes
+(epstopdf)                    date: 2022-12-11 19:02:11
+(epstopdf)                    size: 27877 bytes
 (epstopdf)             Command: <repstopdf --outfile=./logo1-eps-converted-to.p
 df ./logo1.eps>
-(epstopdf)             \includegraphics on input line 73.
+(epstopdf)             \includegraphics on input line 69.
 Package epstopdf Info: Output file is already uptodate.
-
-
-pdfTeX warning: /usr/bin/pdflatex (file ./logo1-eps-converted-to.pdf): PDF incl
-usion: found PDF version <1.7>, but at most version <1.5> allowed
-<./logo1-eps-converted-to.pdf, id=120, 284.06125pt x 80.3pt>
+<./logo1-eps-converted-to.pdf, id=80, 284.06125pt x 80.3pt>
 File: ./logo1-eps-converted-to.pdf Graphic file (type pdf)
 <use ./logo1-eps-converted-to.pdf>
-Package pdftex.def Info: ./logo1-eps-converted-to.pdf  used on input line 73.
+Package pdftex.def Info: ./logo1-eps-converted-to.pdf  used on input line 69.
 (pdftex.def)             Requested size: 144.0pt x 40.70862pt.
 
-Underfull \hbox (badness 10000) detected at line 73
+Underfull \hbox (badness 10000) detected at line 69
 []
  []
 
 
-Overfull \hbox (8.53581pt too wide) in paragraph at lines 73--73
+Overfull \hbox (8.53581pt too wide) in paragraph at lines 69--69
 [][] 
  []
 
-(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+(/usr/local/texlive/2020/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 73.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 69.
 
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
+(/usr/local/texlive/2020/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 73.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 69.
 
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
+(/usr/local/texlive/2020/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+wasy on input line 73
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 69
 .
 
-(/usr/share/texlive/texmf-dist/tex/latex/wasysym/uwasy.fd
+(/usr/local/texlive/2020/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
 )
-Underfull \hbox (badness 10000) detected at line 73
+Underfull \hbox (badness 10000) detected at line 69
 []
  []
 
@@ -749,43 +767,43 @@ Underfull \hbox (badness 10000) detected at line 73
 
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./logo1-eps-converted-to.p
-df>]
+{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./logo1
+-eps-converted-to.pdf>]
 
 Package natbib Warning: Citation `nuclearfields.com' on page 2 undefined on inp
-ut line 92.
+ut line 88.
 
 
 Package natbib Warning: Citation `collimators' on page 2 undefined on input lin
-e 92.
+e 88.
 
 
 Package natbib Warning: Citation `recall Dr. Mawko's book' on page 2 undefined 
-on input line 92.
+on input line 88.
 
 
 Package natbib Warning: Citation `ozashin_clinical_2020' on page 2 undefined on
- input line 92.
+ input line 88.
 
 
 Package natbib Warning: Citation `thielemans_stir_2012' on page 2 undefined on 
-input line 94.
+input line 90.
 
 
 Package natbib Warning: Citation `fuster_integration_2013a' on page 2 undefined
- on input line 94.
+ on input line 90.
 
 
 Package natbib Warning: Citation `fuster_integration_2013b' on page 2 undefined
- on input line 94.
+ on input line 90.
 
 
 Package natbib Warning: Citation `Refs. 2-5 in SPECTUB' on page 2 undefined on 
-input line 98.
+input line 94.
 
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 1
-02.
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 9
+8.
+(/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
 Package microtype Info: Loading generic protrusion settings for font family
@@ -795,59 +813,49 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 
 Package natbib Warning: Citation `interfile' on page 2 undefined on input line 
-102.
-
-<STIR-UsersGuide_PinholeSPECTUB.png, id=139, 956.07187pt x 1059.20718pt>
-File: STIR-UsersGuide_PinholeSPECTUB.png Graphic file (type png)
-<use STIR-UsersGuide_PinholeSPECTUB.png>
-Package pdftex.def Info: STIR-UsersGuide_PinholeSPECTUB.png  used on input line
- 106.
-(pdftex.def)             Requested size: 128.40765pt x 142.26378pt.
-
-Package natbib Warning: Citation `fuster_2014' on page 2 undefined on input lin
-e 112.
+98.
 
 LaTeX Font Info:    Font shape `OT1/phv/b/it' in size <11> not available
-(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 113.
+(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 101.
 
 Overfull \vbox (3.49998pt too high) has occurred while \output is active []
 
 
 [2]
 
+Package natbib Warning: Citation `fuster_2014' on page 3 undefined on input lin
+e 108.
+
+
 Package natbib Warning: Citation `strugari_nema_2022' on page 3 undefined on in
-put line 117.
+put line 112.
 
 
 Overfull \vbox (3.49998pt too high) has occurred while \output is active []
 
 
-[3 <./STIR-UsersGuide_PinholeSPECTUB.png>]
+[3]
 LaTeX Font Info:    Trying to load font information for OMS+ptm on input line 1
-37.
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
+32.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 137.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 132.
 
 
-Package natbib Warning: Citation `osem' on page 4 undefined on input line 169.
+Package natbib Warning: Citation `osem' on page 4 undefined on input line 164.
 
 
-LaTeX Warning: Reference `fig:sinogram' on page 4 undefined on input line 173.
+LaTeX Warning: Reference `fig:sinogram' on page 4 undefined on input line 168.
 
 
 LaTeX Warning: Reference `fig:gate_sinogram' on page 4 undefined on input line 
-173.
+168.
 
 
 LaTeX Warning: Reference `fig:stir_sinogram' on page 4 undefined on input line 
-173.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
+168.
 
 
 Overfull \vbox (3.49998pt too high) has occurred while \output is active []
@@ -856,22 +864,22 @@ Overfull \vbox (3.49998pt too high) has occurred while \output is active []
 [4]
 
 Package natbib Warning: Citation `ososlmrp' on page 5 undefined on input line 1
-83.
+78.
 
 
-Package natbib Warning: Citation `osspsqp' on page 5 undefined on input line 18
-3.
+Package natbib Warning: Citation `osspsqp' on page 5 undefined on input line 17
+8.
 
 
-Underfull \hbox (badness 2418) in paragraph at lines 191--192
+Underfull \hbox (badness 2418) in paragraph at lines 186--187
 []\OT1/ptm/m/n/12 (+20) To compare uniformity and variability with different ty
 pes of corrections available in the
  []
 
 LaTeX Font Info:    Font shape `OT1/phv/b/it' in size <11.5> not available
-(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 201.
+(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 196.
 
-Package natbib Warning: Citation `debay' on page 5 undefined on input line 203.
+Package natbib Warning: Citation `debay' on page 5 undefined on input line 198.
 
 
 
@@ -879,74 +887,64 @@ Overfull \vbox (3.49998pt too high) has occurred while \output is active []
 
 
 [5]
+
+LaTeX Warning: Reference `fig:unformity_variability' on page 6 undefined on inp
+ut line 270.
+
+
 Overfull \vbox (3.49998pt too high) has occurred while \output is active []
 
 
 [6]
-LaTeX Font Info:    Font shape `OT1/phv/b/it' in size <12> not available
-(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 289.
-LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <12> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 290.
-
-Overfull \vbox (3.49998pt too high) has occurred while \output is active []
-
-
-[7]
 No file manuscript.bbl.
-Package epstopdf Info: Source file: <logo1.eps>
-(epstopdf)                    date: 2022-11-23 13:11:14
-(epstopdf)                    size: 2415779 bytes
-(epstopdf)             Output file: <logo1-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-23 15:02:59
-(epstopdf)                    size: 27674 bytes
-(epstopdf)             Command: <repstopdf --outfile=logo1-eps-converted-to.pdf
- logo1.eps>
-(epstopdf)             \includegraphics on input line 344.
-Package epstopdf Info: Output file is already uptodate.
+<Figures/STIR-UsersGuide_PinholeSPECTUB.png, id=147, 956.07187pt x 1059.20718pt
+>
+File: Figures/STIR-UsersGuide_PinholeSPECTUB.png Graphic file (type png)
+<use Figures/STIR-UsersGuide_PinholeSPECTUB.png>
+Package pdftex.def Info: Figures/STIR-UsersGuide_PinholeSPECTUB.png  used on in
+put line 344.
+(pdftex.def)             Requested size: 128.40765pt x 142.26378pt.
 
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-pdfTeX warning: /usr/bin/pdflatex (file ./logo1-eps-converted-to.pdf): PDF incl
-usion: found PDF version <1.7>, but at most version <1.5> allowed
-<logo1-eps-converted-to.pdf, id=201, 284.06125pt x 80.3pt>
-File: logo1-eps-converted-to.pdf Graphic file (type pdf)
-<use logo1-eps-converted-to.pdf>
-Package pdftex.def Info: logo1-eps-converted-to.pdf  used on input line 344.
-(pdftex.def)             Requested size: 284.52756pt x 80.43947pt.
-Package epstopdf Info: Source file: <logo1.eps>
-(epstopdf)                    date: 2022-11-23 13:11:14
-(epstopdf)                    size: 2415779 bytes
-(epstopdf)             Output file: <logo1-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-23 15:02:59
-(epstopdf)                    size: 27674 bytes
-(epstopdf)             Command: <repstopdf --outfile=logo1-eps-converted-to.pdf
- logo1.eps>
-(epstopdf)             \includegraphics on input line 356.
-Package epstopdf Info: Output file is already uptodate.
-File: logo1-eps-converted-to.pdf Graphic file (type pdf)
-<use logo1-eps-converted-to.pdf>
-Package pdftex.def Info: logo1-eps-converted-to.pdf  used on input line 356.
-(pdftex.def)             Requested size: 252.0pt x 71.24008pt.
 Package hyperref Info: bookmark level for unknown subfigure defaults to 0 on in
 put line 357.
-Package epstopdf Info: Source file: <logo2.eps>
-(epstopdf)                    date: 2022-11-23 13:11:14
-(epstopdf)                    size: 1638147 bytes
-(epstopdf)             Output file: <logo2-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-23 15:02:59
-(epstopdf)                    size: 13668 bytes
-(epstopdf)             Command: <repstopdf --outfile=logo2-eps-converted-to.pdf
- logo2.eps>
-(epstopdf)             \includegraphics on input line 364.
-Package epstopdf Info: Output file is already uptodate.
+<Figures/SNR_1mmHotRod.pdf, id=149, 763.91649pt x 549.04721pt>
+File: Figures/SNR_1mmHotRod.pdf Graphic file (type pdf)
+<use Figures/SNR_1mmHotRod.pdf>
+Package pdftex.def Info: Figures/SNR_1mmHotRod.pdf  used on input line 414.
+(pdftex.def)             Requested size: 151.20154pt x 108.6681pt.
+<Figures/SNR_3mmHotRod.pdf, id=150, 763.91649pt x 549.04721pt>
+File: Figures/SNR_3mmHotRod.pdf Graphic file (type pdf)
+<use Figures/SNR_3mmHotRod.pdf>
+Package pdftex.def Info: Figures/SNR_3mmHotRod.pdf  used on input line 422.
+(pdftex.def)             Requested size: 151.20154pt x 108.6681pt.
+<Figures/SNR_5mmHotRod.pdf, id=151, 763.91649pt x 549.04721pt>
+File: Figures/SNR_5mmHotRod.pdf Graphic file (type pdf)
+<use Figures/SNR_5mmHotRod.pdf>
+Package pdftex.def Info: Figures/SNR_5mmHotRod.pdf  used on input line 430.
+(pdftex.def)             Requested size: 151.20154pt x 108.6681pt.
+<Figures/Resolution.pdf, id=155, 763.59406pt x 517.7876pt>
+File: Figures/Resolution.pdf Graphic file (type pdf)
+<use Figures/Resolution.pdf>
+Package pdftex.def Info: Figures/Resolution.pdf  used on input line 445.
+(pdftex.def)             Requested size: 252.0pt x 170.87833pt.
 
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-pdfTeX warning: /usr/bin/pdflatex (file ./logo2-eps-converted-to.pdf): PDF incl
-usion: found PDF version <1.7>, but at most version <1.5> allowed
-<logo2-eps-converted-to.pdf, id=202, 70.2625pt x 79.29625pt>
-File: logo2-eps-converted-to.pdf Graphic file (type pdf)
-<use logo2-eps-converted-to.pdf>
-Package pdftex.def Info: logo2-eps-converted-to.pdf  used on input line 364.
-(pdftex.def)             Requested size: 252.0pt x 284.44862pt.
+<Figures/VSAC_Uniformity.pdf, id=156, 771.39314pt x 508.63524pt>
+File: Figures/VSAC_Uniformity.pdf Graphic file (type pdf)
+<use Figures/VSAC_Uniformity.pdf>
+Package pdftex.def Info: Figures/VSAC_Uniformity.pdf  used on input line 457.
+(pdftex.def)             Requested size: 252.0pt x 166.15822pt.
+<Figures/VSAC_CV.pdf, id=157, 771.20494pt x 511.69217pt>
+File: Figures/VSAC_CV.pdf Graphic file (type pdf)
+<use Figures/VSAC_CV.pdf>
+Package pdftex.def Info: Figures/VSAC_CV.pdf  used on input line 465.
+(pdftex.def)             Requested size: 252.0pt x 167.20369pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 
 Package caption Warning: Unused \captionsetup[sub] on input line 20.
 See the caption package documentation for explanation.
@@ -955,58 +953,90 @@ See the caption package documentation for explanation.
 Overfull \vbox (3.49998pt too high) has occurred while \output is active []
 
 
-[8 <./logo1-eps-converted-to.pdf>]
+[7]
+Overfull \vbox (3.49998pt too high) has occurred while \output is active []
+
+
+[8 <./Figures/STIR-UsersGuide_PinholeSPECTUB.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Overfull \vbox (3.49998pt too high) has occurred while \output is active []
 
 
-[9 <./logo2-eps-converted-to.pdf>]
+[9 <./Figures/SNR_1mmHotRod.pdf> <./Figures/SNR_3mmHotRod.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Figures/SNR_3mmHotRod.pdf)
+: PDF inclusion: multiple pdfs with page group included in a single page
+> <./Figures/SNR_5mmHotRod.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Figures/SNR_5mmHotRod.pdf)
+: PDF inclusion: multiple pdfs with page group included in a single page
+>]
+Overfull \vbox (3.49998pt too high) has occurred while \output is active []
+
+
+[10 <./Figures/Resolution.pdf> <./Figures/VSAC_Uniformity.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Figures/VSAC_Uniformity.pd
+f): PDF inclusion: multiple pdfs with page group included in a single page
+> <./Figures/VSAC_CV.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Figures/VSAC_CV.pdf): PDF 
+inclusion: multiple pdfs with page group included in a single page
+>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \vbox (3.49998pt too high) has occurred while \output is active []
+
+
+[11]
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 379.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 379.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 489.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 489.
 (./manuscript.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 379.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 379.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 489.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 489.
 Package rerunfilecheck Info: File `manuscript.out' has not changed.
-(rerunfilecheck)             Checksum: 2BB9880E76CC27637360C8E58E39B2B0;2260.
+(rerunfilecheck)             Checksum: 8231B910968039270D6ACAA6FD00197C;1618.
 
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 14040 strings out of 483107
- 224038 string characters out of 5964629
- 557995 words of memory out of 5000000
- 28482 multiletter control sequences out of 15000+600000
- 585878 words of font info for 230 fonts, out of 8000000 for 9000
- 63 hyphenation exceptions out of 8191
- 63i,16n,100p,1753b,398s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/urw/helvetic/uhvbo8a.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-urw/helvetic/uhvro8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/u
-tmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/wasy-type1/wasy10.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/wasy-type1/wasy8.pfb>
-Output written on manuscript.pdf (9 pages, 327609 bytes).
+ 14068 strings out of 480608
+ 226666 string characters out of 5903631
+ 574737 words of memory out of 5000000
+ 29368 multiletter control sequences out of 15000+600000
+ 583569 words of font info for 229 fonts, out of 8000000 for 9000
+ 1145 hyphenation exceptions out of 8191
+ 63i,18n,100p,1753b,597s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
+exlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/te
+xlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texl
+ive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texliv
+e/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2
+020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2020
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2020/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2020/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2020/texm
+f-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2020/texmf-dist/f
+onts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/ty
+pe1/urw/helvetic/uhvbo8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/ur
+w/helvetic/uhvr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/helve
+tic/uhvro8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmb8
+a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></us
+r/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmri8a.pfb></usr/local/t
+exlive/2020/texmf-dist/fonts/type1/public/wasy-type1/wasy10.pfb></usr/local/tex
+live/2020/texmf-dist/fonts/type1/public/wasy-type1/wasy8.pfb>
+Output written on manuscript.pdf (11 pages, 502538 bytes).
 PDF statistics:
- 294 PDF objects out of 1000 (max. 8388607)
- 251 compressed objects within 3 object streams
- 49 named destinations out of 1000 (max. 500000)
- 43773 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 644 PDF objects out of 1000 (max. 8388607)
+ 472 compressed objects within 5 object streams
+ 44 named destinations out of 1000 (max. 500000)
+ 41153 words of extra memory for PDF output out of 42996 (max. 10000000)
 
