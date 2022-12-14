@@ -55,7 +55,7 @@ $^{5}$Department of Diagnostic Radiology, Dalhousie University, Halifax, Canada
 \onecolumn
 \firstpage{1}
 
-\title[STIR PinholeSPECT]{Integration of advanced 3D SPECT modelling for pinhole collimators into the open-source STIR framework} 
+\title[Pinhole-SPECT reconstruction with STIR]{Integration of advanced 3D SPECT modelling for pinhole collimators into the open-source STIR framework} 
 
 \author[\firstAuthorLast ]{\Authors} %This field will be automatically populated
 \address{} %This field will be automatically populated
@@ -95,7 +95,7 @@ This work aims to demonstrate the forthcoming capabilities of STIR's support for
 
 \section{Technical description}
 
-Similar to the original \texttt{SPECTUB} implementation, the new pinhole-SPECT implementation is referred to as \texttt{PinholeSPECTUB} and includes a dedicated reader for SPECT projection data in interfile format~\cite{interfile}. The pinhole-SPECT interfile reader utilizes the projection matrix size, pixel scaling factor, and detector radius. Calculation of the system matrix is executed with the \texttt{ProjMatrixByBinPinholeSPECTUB} projector class derived from the existing STIR \texttt{ProjMatrixByBin} class which utilizes a detector and collimator text file in addition to the usual STIR parameter file. The parameter file is a text file which uses an Interfile-like syntax. It is composed of keywords corresponding to the names of the various reconstruction and matrix parameters with the values entered next to them. A detailed description of all parameters can be found in STIR's documentation.
+Similar to the original \texttt{SPECTUB} implementation, the new pinhole-SPECT implementation is referred to as \texttt{PinholeSPECTUB} and includes a dedicated reader for SPECT projection data in interfile format~\cite{interfile}. The pinhole-SPECT interfile reader utilizes the projection matrix size, pixel scaling factor, and detector radius according to the face of the scintillating crystal. Calculation of the system matrix is executed with the \texttt{ProjMatrixByBinPinholeSPECTUB} projector class derived from the existing STIR \texttt{ProjMatrixByBin} class which utilizes a detector and collimator text file in addition to the usual STIR parameter file. The parameter file is a text file which uses an Interfile-like syntax. It is composed of keywords corresponding to the names of the various reconstruction and matrix parameters with the values entered next to them. A detailed description of all parameters can be found in STIR's documentation.
 
 The detector file defines the intrinsic resolution for point spread function (PSF) corrections, scintillating crystal attributes for depth of interaction (DOI) corrections, and orbit information for the acquisition (i.e., initial angle, number of angles, angular increment, direction of rotation, and axial position with respect to the reconstructed volume). Note that only circular camera orbits are supported at this time. The collimator file defines the radius of rotation and geometry for cylindrical or polygonal collimators (i.e., the detector element exposed by the pinhole, hole position, shape, size, tilt, and acceptance angle). An illustration of the pinhole-SPECT system matrix geometry is shown in Fig.~\ref{fig:PinholeSPECTUB_coords}.
 
@@ -105,7 +105,7 @@ The detector file defines the intrinsic resolution for point spread function (PS
 
 The system matrix weights the contribution of each image voxel along the line of response (LOR) to each detector element. For increased system matrix accuracy, corrections can be made for the spatially variant collimator-detector response function in terms of intrinsic PSF, DOI, and/or attenuation (ATT) corrections by setting the appropriate fields in the parameter file. When PSF correction is disabled, a geometrical approach is applied by considering the shadow projection of the pinhole on the detector for higher computational speed and reduced memory requirements compared to the PSF approach, but is less accurate. When PSF correction is enabled, the shadow of the hole is convolved with the PSF in detector space to account for blurring effects of the camera. Values parsed from the parameter file define the number of sigmas to consider in the PSF along with the subsampling factor to temporally reduce PSF resolution for increased calculation accuracy before downsampling the final PSF to the bin size. Furthermore, when PSF or DOI corrections are enabled, an additional parsed parameter sets the spatial resolution in which to sample PSF and DOI distributions. 
 
-Enabling DOI corrections subdivides the scintillating crystal into the aforementioned distribution using Bresenham's line algorithm to correct for the attenuation, and hence the DOI, along the LOR. If DOI correction is disabled, then the DOI is taken to be the center of the scintillator. When ATT correction is enabled, a simple correction can be applied where the same attenuation factor is applied for the whole PSF, or a full correction can be applied where different attenuation factors are applied for each bin of the PSF~\cite{fuster_2014}. Further improvements to speed and memory can be made with image masking using the default cylinder, an attenuation map, or a mask file. The default cylinder is based on the object radius in the image volume. It is important to always set the object radius greater than or equal to the size of the object in the attenuation map or mask file when masking as the matrix weights are calculated according to this value, and failure to do so will result in an error. The projection matrix can be kept in memory or calculated per projection angle. In the latter case, the memory is released before starting calculations on a new angle, thereby reducing memory requirements but increasing computation time for iterative reconstruction algorithms.
+Enabling DOI corrections subdivides the scintillating crystal using Bresenham's line algorithm to correct for the crystal attenuation, and hence the DOI, along the LOR. If DOI correction is disabled, then the detector radius is taken to be the center of the scintillator. When ATT correction is enabled, a simple correction can be applied where the same attenuation factor is applied for the whole PSF, or a full correction can be applied where different attenuation factors are applied for each bin of the PSF~\cite{fuster_2014}. Further improvements to speed and memory can be made with image masking using the default cylinder, an attenuation map, or a mask file. The default cylinder is based on the object radius in the image volume. It is important to always set the object radius greater than or equal to the size of the object in the attenuation map or mask file when masking as the matrix weights are calculated according to this value, and failure to do so will result in an error. The projection matrix can be kept in memory or calculated per projection angle. In the latter case, the memory is released before starting calculations on a new angle, thereby reducing memory requirements but increasing computation time for iterative reconstruction algorithms.
 
 \section{Materials and methods}
 
@@ -312,7 +312,7 @@ This work was supported in part by a Nova Scotia Graduate Scholarship, a series 
 %Details of all funding sources should be provided, including grant numbers if applicable. Please ensure to add all necessary funding information, as after publication this is no longer possible.
 
 \section*{Acknowledgments}
-The authors would like to thank Drs. Sultan Darvesh, G. Andrew Reid, and Ian Pottie for allowing the acquisition of a single-pinhole SPECT dataset for this study during the investigation of a novel radiotracer for Alzheimer's disease diagnosis as well as Dr. Christa Davis for performing the tail-vein injection. The main author would like to thank the Collaborative Computation Project (CCP) for supporting the integration of the software into the open-source STIR framework. The authors would also like to thank Dr. Daniel Deidda for engaging in discussion during the development of the integration software.
+The authors would like to thank Drs. Sultan Darvesh, G. Andrew Reid, and Ian Pottie for allowing the acquisition of a single-pinhole SPECT dataset for this study during the investigation of a novel radiotracer for Alzheimer's disease diagnosis as well as Christa Davis for performing the tail-vein injection. The main author would like to thank the Collaborative Computation Project (CCP) for supporting the integration of the software into the open-source STIR framework. The authors would also like to thank Dr. Daniel Deidda for engaging in discussion during the development of the integration software.
 
 %This is a short text to acknowledge the contributions of specific colleagues, institutions, or agencies that aided the efforts of the authors.
 
@@ -339,148 +339,94 @@ The datasets used and/or analyzed during the current study are available from th
 
 %-------------------------------------------------
 \begin{figure}[h!]
-\setcounter{figure}{0}
 \begin{center}
-\includegraphics[height=5cm]{Figures/STIR-UsersGuide_PinholeSPECTUB}
+\includegraphics[height=6cm]{Figures/STIR-UsersGuide_PinholeSPECTUB}
 \end{center}
-\caption{\texttt{PinholeSPECTUB} system of reference and sign criteria illustrated for a polygonal collimator setup. Note that the projection matrix adheres to STIR's coordinate system as indicated by the x, y, and z axes. The detector and collimator use a rotating frame of reference where the transaxial x' and axial z' axes coincide with STIR's axes when the detector is at 0 $\mathrm{\deg}$. The collimator uses a right-handed coordinate system as indicated by the y' axis which points toward the detector. Further information is given in the text and in STIR's documentation.}\label{fig:PinholeSPECTUB_coords}
+\caption{\texttt{PinholeSPECTUB} system of reference and sign criteria illustrated for a polygonal collimator setup. Note that the projection matrix adheres to STIR's coordinate system as indicated by the x, y, and z axes. The detector and collimator use a rotating frame of reference where the transaxial x' and axial z' axes coincide with STIR's axes when the detector is at 0 $\mathrm{\deg}$. The collimator uses a right-handed coordinate system as indicated by the y' axis which points toward the detector. Further information is given in the text and in STIR's documentation.}
+\label{fig:PinholeSPECTUB_coords}
 \end{figure}
 
 
 %-------------------------------------------------
-\begin{subfigure}
-    \centering
-    	\setcounter{figure}{4}
-	\setcounter{subfigure}{0}
-    \begin{minipage}[b]{0.5\textwidth}
-        %\includegraphics[width=\linewidth]{Figures/sinogram_forward.pdf}
-        \caption{sinogram forward.}
-        \label{fig:sino_forward}
-    \end{minipage}  
-   
-	\setcounter{figure}{4}
-	\setcounter{subfigure}{1}
-    \begin{minipage}[b]{0.5\textwidth}
-        %\includegraphics[width=\linewidth]{Figures/sinogram_simulated.pdf}
-        \caption{sinogram forward.}
-        \label{fig:sino_simulated}
-    \end{minipage}
-    
-\setcounter{figure}{4}
-\setcounter{subfigure}{-1}
-\caption{Sinograms}\label{fig:sinograms}
-\end{subfigure}
-
-
-%-------------------------------------------------
-\begin{subfigure}
-    \centering
-    	\setcounter{figure}{4}
-	\setcounter{subfigure}{0}
-    \begin{minipage}[b]{0.5\textwidth}
-        %\includegraphics[width=\linewidth]{Figures/reconstruction_hotrods.pdf}
-        \caption{recon hotrods.}
-        \label{fig:recon_hotrods}
-    \end{minipage}  
-   
-	\setcounter{figure}{4}
-	\setcounter{subfigure}{1}
-    \begin{minipage}[b]{0.5\textwidth}
-        %\includegraphics[width=\linewidth]{Figures/reconstruction_resolution.pdf}
-        \caption{recon resolution.}
-        \label{fig:recon_resolution}
-    \end{minipage}
-    
-    	\setcounter{figure}{4}
-	\setcounter{subfigure}{1}
-    \begin{minipage}[b]{0.5\textwidth}
-        %\includegraphics[width=\linewidth]{Figures/reconstruction_cylinder.pdf}
-        \caption{recon cylinder.}
-        \label{fig:recon_cylinder}
-    \end{minipage}
-    
-\setcounter{figure}{4}
-\setcounter{subfigure}{-1}
-\caption{OSEM images after 10 subiterations and no corrections. 1. Axial sum of Micro-PET IQ hot rods, 2. Axial sum of the mouse- sized NEMA phantom, 3. Axial sum of the volumetric cylinder, and 4.  Images 1-3 are normalized and image 4 is thresholded. Note the expected distributions of \ce{^{99m}Tc}.}\label{fig:reconstructions}
-\end{subfigure}
-
-
-%-------------------------------------------------
-\begin{subfigure}
-    \centering
-    	\setcounter{figure}{2}
-	\setcounter{subfigure}{0}
-    \begin{minipage}[b]{0.3\textwidth}
-        \includegraphics[width=\linewidth]{Figures/SNR_1mmHotRod.pdf}
-        \caption{1 mm hot rod.}
-        \label{fig:1mmRod}
-    \end{minipage}  
-   
-	\setcounter{figure}{2}
-	\setcounter{subfigure}{1}
-    \begin{minipage}[b]{0.3\textwidth}
-        \includegraphics[width=\linewidth]{Figures/SNR_3mmHotRod.pdf}
-        \caption{3 mm hot rod.}
-        \label{fig:3mmRod}
-    \end{minipage}
-    
-    \setcounter{figure}{2}
-	\setcounter{subfigure}{2}
-    \begin{minipage}[b]{0.3\textwidth}
-        \includegraphics[width=\linewidth]{Figures/SNR_5mmHotRod.pdf}
-        \caption{5 mm hot rod}
-        \label{fig:5mmRod}
-    \end{minipage}
-    
-\setcounter{figure}{2}
-\setcounter{subfigure}{-1}
-\caption{CNR of 1 mm (\textbf{\ref{fig:1mmRod}.}), 3 mm (\textbf{\ref{fig:3mmRod}.}), and 5 mm (\textbf{\ref{fig:5mmRod}.}) IQ phantom hot rods comparing OSEM (solid line), OS-OSL-MRP (dotted line), and OS-SPS-QP (dashed line) over 200 subiterations without matrix corrections. The OS-SPS-QP reconstruction was initialized using the OSEM image at 21 subiterations. Hot rod contrast was calculated relative to the central region void of \ce{^{99m}Tc}, and CV was calculated in the uniform \ce{^{99m}Tc} region.}\label{fig:CNR}
-\end{subfigure}
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[height=6cm]{Figures/HotRod_sinograms_y130}
+\end{center}
+\caption{Projection of IQ phantom hot rod region displayed in a 2D sinogram arrangement showing the GATE simulated data (\textbf{left}) and the STIR forward projection of the radioactive source distribution adding PSF, DOI, and ATT degradations (\textbf{right}).}
+\label{fig:PinholeSPECTUB_coords}
+\end{figure}
 
 
 %-------------------------------------------------
 \begin{figure}[h!]
-\setcounter{figure}{2}
+\begin{center}
+\includegraphics[width=\textwidth]{Figures/HotRod_CNR}
+\end{center}
+\caption{IQ phantom hot rod CNR plots comparing OSEM (solid line), OS-OSL with median root prior (dotted line), and OS-SPS with quadratic prior (dashed line) over subiterations for the 1 mm hot rod (\textbf{left}), 3 mm hot rod (\textbf{middle}), and 5 mm hot rod (\textbf{right}). All images were reconstructed with no matrix corrections and seven subsets, and the OS-SPS-QP reconstruction was initialized using the OSEM image after 21 subiterations. Hot rod contrast was calculated relative to the central inter-rod region void of \ce{^{99m}Tc}, and CV was calculated in the uniform \ce{^{99m}Tc} region.}
+\label{fig:CNR}
+\end{figure}
+
+
+%-------------------------------------------------
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=\textwidth]{Figures/OSEM_reconstructions}
+\end{center}
+\caption{Simulated data. Axial sum of normalized OSEM images after 35 subiterations with no matrix corrections and seven subsets for the IQ phantom hot rods (\textbf{left}), mouse-sized NEMA line source phantom (\textbf{middle}), and volumetric cylinder (\textbf{right}). The IQ phantom image was summed over the length of the hot rods whereas the other images were summed over the entire length of the reconstructed image. Note the expected distributions of \ce{^{99m}Tc}.}
+\label{fig:reconstructions}
+\end{figure}
+
+
+
+
+%-------------------------------------------------
+\begin{figure}[h!]
 \begin{center}
 \includegraphics[width=0.5\linewidth]{Figures/Resolution.pdf}
 \end{center}
-\caption{SPECT spatial resolution with scatter in the mouse-sized NEMA triple line source phantom using the OSEM algorithm with 7 subsets.}\label{fig:resolution}
+\caption{SPECT spatial resolution with scatter in the mouse-sized NEMA triple line source phantom using the OSEM algorithm with seven subsets.}\label{fig:resolution}
 \end{figure}
 
 
 %-------------------------------------------------
-\begin{subfigure}
+\begin{figure}
     \centering
-    	\setcounter{figure}{4}
-	\setcounter{subfigure}{0}
-    \begin{minipage}[b]{0.5\textwidth}
+    \begin{minipage}[t]{0.5\textwidth}
         \includegraphics[width=\linewidth]{Figures/VSAC_Uniformity.pdf}
-        \caption{Uniformity.}
-        \label{fig:uniformity}
-    \end{minipage}  
-   
-	\setcounter{figure}{4}
-	\setcounter{subfigure}{1}
-    \begin{minipage}[b]{0.5\textwidth}
+    \end{minipage}%
+    \begin{minipage}[t]{0.5\textwidth}
         \includegraphics[width=\linewidth]{Figures/VSAC_CV.pdf}
-        \caption{Variability.}
-        \label{fig:variability}
     \end{minipage}
-    
-\setcounter{figure}{4}
-\setcounter{subfigure}{-1}
-\caption{SPECT uniformity (\textbf{\ref{fig:uniformity}}) and variability (\textbf{\ref{fig:variability}}) in the volumetric cylinder using the OSEM algorithm with 7 subsets.}\label{fig:uniformity_variability}
-\end{subfigure}
+\caption{SPECT uniformity (\textbf{left}) and variability (\textbf{right}) in the volumetric cylinder using the OSEM algorithm with 7 subsets.}\label{fig:uniformity_variability}
+\end{figure}
 
 
 %-------------------------------------------------
 \begin{figure}[h!]
-\setcounter{figure}{2}
 \begin{center}
 %\includegraphics[width=0.5\linewidth]{Figures/InVivo.pdf}
 \end{center}
 \caption{Sagittal fused SPECT/CT of the \textit{in vivo} mouse with a window ranging from 0 to 1. The \ce{^{123}I} distribution shows a nonpersistent tracer in the brain.}\label{fig:invivo}
 \end{figure}
+
+
+%-------------------------------------------------
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=\textwidth]{Figures/DOI_CylVol_bug}
+\end{center}
+\caption{Simulated data. Slices of the volumetric cylinder thresholded between 0 and 1.}
+\label{fig:DOIbug}
+\end{figure}
+
+
+
+
+
+
+
+
+
 
 %%% If you don't add the figures in the LaTeX files, please upload them when submitting the article.
 %%% Frontiers will add the figures at the end of the provisional pdf automatically
