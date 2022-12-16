@@ -1,0 +1,53 @@
+This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: manuscript.aux
+The style file: vancouver.bst
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Database file #1: references.bib
+Warning--empty author and editor in van_mullekom_group_collimators_2021
+Warning--missing publisher in van_mullekom_group_collimators_2021
+You've used 17 entries,
+            3170 wiz_defined-function locations,
+            778 strings with 9928 characters,
+and the built_in function-call counts, 40192 in all, are:
+= -- 5170
+> -- 312
+< -- 1
++ -- 198
+- -- 78
+* -- 3428
+:= -- 4241
+add.period$ -- 78
+call.type$ -- 17
+change.case$ -- 6
+chr.to.int$ -- 0
+cite$ -- 19
+duplicate$ -- 3445
+empty$ -- 3811
+format.name$ -- 92
+if$ -- 9457
+int.to.chr$ -- 0
+int.to.str$ -- 17
+missing$ -- 207
+newline$ -- 101
+num.names$ -- 17
+pop$ -- 328
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 345
+stack$ -- 0
+substring$ -- 7918
+swap$ -- 486
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 2
+while$ -- 182
+width$ -- 19
+write$ -- 215
+(There were 2 warnings)

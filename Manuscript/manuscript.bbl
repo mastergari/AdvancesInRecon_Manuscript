@@ -1,0 +1,130 @@
+\begin{thebibliography}{10}
+
+\bibitem{van_mullekom_group_collimators_2021}
+{Van Mullekom Group}. Collimators for {Nuclear} {Medicine} [Corporate]; 2021.
+\newblock Available from:
+  \url{https://nuclearfields.com/collimators-nuclear-medicine.htm}.
+
+\bibitem{islamian_advances_2015}
+Islamian J, Azazrm A, Mahmoudian B, Gharapapagh E.
+\newblock Advances in {Pinhole} and {Multi}-{Pinhole} {Collimators} {For}
+  {Single} {Photon} {Emission} {Computed} {Tomography} {Imaging}.
+\newblock World Journal of Nuclear Medicine. 2015 Jan;14(01):3--9.
+\newblock Available from:
+  \url{http://www.thieme-connect.de/DOI/DOI?10.4103/1450-1147.150505}.
+
+\bibitem{ozsahin_clinical_2020}
+Ozsahin I, Chen L, Könik A, King MA, Beekman FJ, Mok GSP.
+\newblock The clinical utilities of multi-pinhole single photon emission
+  computed tomography.
+\newblock Quantitative Imaging in Medicine and Surgery. 2020
+  Oct;10(10):2006--2029.
+
+\bibitem{thielemans_stir_2012}
+Thielemans K, Tsoumpas C, Mustafovic S, Beisel T, Aguiar P, Dikaios N, et~al.
+\newblock {STIR}: software for tomographic image reconstruction release 2.
+\newblock Physics in Medicine and Biology. 2012 Feb;57(4):867--883.
+\newblock Number: 4.
+\newblock Available from:
+  \url{https://iopscience.iop.org/article/10.1088/0031-9155/57/4/867}.
+
+\bibitem{marti_fuster_integration_2013}
+Marti~Fuster B, Falcon C, Tsoumpas C, Livieratos L, Aguiar P, Cot A, et~al.
+\newblock Integration of advanced {3D} {SPECT} modeling into the open-source
+  {STIR} framework.
+\newblock Medical Physics. 2013 Aug;40(9):092502.
+\newblock Number: 9.
+\newblock Available from: \url{http://doi.wiley.com/10.1118/1.4816676}.
+
+\bibitem{marti_fuster_evaluation_2013}
+Marti~Fuster B, Erlandsson K, Falcon C, Tsoumpas C, Livieratos L, Ros D, et~al.
+\newblock Evaluation of the novel {3D} {SPECT} modelling algorithm in the
+  {STIR} reconstruction framework: {Simple} vs. full attenuation correction.
+\newblock In: 2013 {IEEE} {Nuclear} {Science} {Symposium} and {Medical}
+  {Imaging} {Conference} (2013 {NSS}/{MIC}). Seoul, Korea (South): IEEE; 2013.
+  p. 1--3.
+\newblock Available from: \url{http://ieeexplore.ieee.org/document/6829258/}.
+
+\bibitem{falcon_metodos_1999}
+Falcon CM.
+\newblock Métodos iterativos de reconstrucción tomográfica en {SPECT}
+  [Ph.{D}. {Thesis}].
+\newblock Universitat de Barcelona; 1999.
+\newblock Available from: \url{https://www.tdx.cat/handle/10803/1785}.
+
+\bibitem{cot_absolute_2005}
+Cot A, Falcón C, Crespo C, Sempau J, Pareto D, Bullich S, et~al.
+\newblock Absolute quantification in dopaminergic neurotransmission {SPECT}
+  using a {Monte} {Carlo}-based scatter correction and fully 3-dimensional
+  reconstruction.
+\newblock Journal of Nuclear Medicine: Official Publication, Society of Nuclear
+  Medicine. 2005 Sep;46(9):1497--1504.
+
+\bibitem{pareto_geometrical_2002}
+Pareto D, Cot A, Falcon C, Juvells I, Pavia J, Ros D.
+\newblock Geometrical response modeling in fan-beam collimators-a numerical
+  simulation.
+\newblock IEEE Transactions on Nuclear Science. 2002 Feb;49(1):17--24.
+
+\bibitem{pareto_iterative_2003}
+Pareto D, Cot A, Pavía J, Falcón C, Juvells I, Lomeña F, et~al.
+\newblock Iterative reconstruction with correction of the spatially variant
+  fan-beam collimator response in neurotransmission {SPET} imaging.
+\newblock European Journal of Nuclear Medicine and Molecular Imaging. 2003
+  Oct;30(10):1322--1329.
+\newblock Available from: \url{https://doi.org/10.1007/s00259-003-1229-7}.
+
+\bibitem{todd-pokropek_file_1992}
+Todd-Pokropek A, Cradduck TD, Deconinck F.
+\newblock A file format for the exchange of nuclear medicine image data: a
+  specification of {Interfile} version 3.3.
+\newblock Nuclear Medicine Communications. 1992 Sep;13(9):673.
+\newblock Available from:
+  \url{https://journals.lww.com/nuclearmedicinecomm/Abstract/1992/09000/A_file_format_for_the_exchange_of_nuclear_medicine.7.aspx}.
+
+\bibitem{strugari_nema_2022}
+Strugari ME, DeBay DR, Beyea SD, Brewer KD.
+\newblock {NEMA} {NU} 1-2018 performance characterization and {Monte} {Carlo}
+  model validation of the {Cubresa} {Spark} {SiPM}-based preclinical {SPECT}
+  scanner.
+\newblock In Review; 2022.
+\newblock Available from:
+  \url{https://www.researchsquare.com/article/rs-1946160/v1}.
+
+\bibitem{hudson_accelerated_1994}
+Hudson HM, Larkin RS.
+\newblock Accelerated image reconstruction using ordered subsets of projection
+  data.
+\newblock IEEE transactions on medical imaging. 1994;13(4):601--609.
+
+\bibitem{green_use_1990}
+Green PJ.
+\newblock On {Use} of the {EM} for {Penalized} {Likelihood} {Estimation}.
+\newblock Journal of the Royal Statistical Society Series B (Methodological).
+  1990;52(3):443--452.
+\newblock Available from: \url{http://www.jstor.org/stable/2345668}.
+
+\bibitem{ahn_globally_2003}
+Ahn S, Fessler JA.
+\newblock Globally convergent image reconstruction for emission tomography
+  using relaxed ordered subsets algorithms.
+\newblock IEEE transactions on medical imaging. 2003 May;22(5):613--626.
+
+\bibitem{macdonald_early_2014}
+Macdonald IR, DeBay DR, Reid GA, O'Leary TP, Jollymore CT, Mawko G, et~al.
+\newblock Early detection of cerebral glucose uptake changes in the {5XFAD}
+  mouse.
+\newblock Current Alzheimer Research. 2014;11(5):450--460.
+\newblock Number: 5.
+
+\bibitem{debay_targeting_2017}
+DeBay DR, Reid GA, Pottie IR, Martin E, Bowen CV, Darvesh S.
+\newblock Targeting butyrylcholinesterase for preclinical single photon
+  emission computed tomography ({SPECT}) imaging of {Alzheimer}'s disease.
+\newblock Alzheimer's \& Dementia: Translational Research \& Clinical
+  Interventions. 2017 Jun;3(2):166--176.
+\newblock Number: 2.
+\newblock Available from:
+  \url{http://doi.wiley.com/10.1016/j.trci.2017.01.005}.
+
+\end{thebibliography}
